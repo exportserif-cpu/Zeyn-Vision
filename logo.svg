@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 990 810" width="990" height="810" role="img" aria-label="ZeynVision">
+  <defs>
+    <linearGradient id="zv-blue" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#0066FF"/>
+      <stop offset="0.55" stop-color="#0089FF"/>
+      <stop offset="1" stop-color="#00D4FF"/>
+    </linearGradient>
+    <linearGradient id="zv-silver" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#9BA3AE"/>
+      <stop offset="0.5" stop-color="#BFC5CE"/>
+      <stop offset="1" stop-color="#E6E8EB"/>
+    </linearGradient>
+    <radialGradient id="zv-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#EAF8FF" stop-opacity="0.95"/>
+      <stop offset="0.35" stop-color="#00D4FF" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#0066FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="zv-rayH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D6F1FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#D6F1FF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#D6F1FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Blue bar (creativity / design): diagonal parallelogram ~52°, upper-left -->
+  <polygon points="116,456 421,68 691,69 386,457" fill="url(#zv-blue)"/>
+
+  <!-- Silver bar (logic / code): parallel diagonal, lower-right -->
+  <polygon points="351,695 708,244 905,245 548,696" fill="url(#zv-silver)"/>
+
+  <!-- Glint: soft cyan glow -->
+  <circle cx="404" cy="451" r="86" fill="url(#zv-glow)"/>
+
+  <!-- Horizontal flare through the junction -->
+  <rect x="180" y="448" width="500" height="6" rx="3" fill="url(#zv-rayH)"/>
+
+  <!-- Four-point star core -->
+  <path d="M404 400 L410 441 L451 451 L410 461 L404 502 L398 461 L357 451 L398 441 Z" fill="#FFFFFF"/>
+  <!-- diagonal rays -->
+  <line x1="352" y1="399" x2="456" y2="503" stroke="#D6F1FF" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
+  <line x1="456" y1="399" x2="352" y2="503" stroke="#D6F1FF" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+  <!-- small bright core -->
+  <circle cx="404" cy="451" r="12" fill="#FFFFFF"/>
+</svg>

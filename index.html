@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZeynVision — حيث تقابل الرؤية الذكاء</title>
+<meta name="description" content="ZeynVision — وكالة تقنية وإبداعية نخبوية: تصميم، هندسة برمجيات، بيانات، وذكاء اصطناعي. حيث تقابل الرؤية الذكاء.">
+<meta property="og:title" content="ZeynVision — Where Vision Meets Intelligence">
+<meta property="og:description" content="Elite creative-tech agency. Design, engineering, data & AI.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=3">
+</head>
+<body>
+
+<!-- ===== خلفية البيانات الحية ===== -->
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<!-- ===== الهيدر ===== -->
+<header class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="brand" aria-label="ZeynVision">
+      <img src="logo.svg" class="logo-mark" alt="ZeynVision logo">
+      <span class="brand-name"><span class="bn-zeyn">Zeyn</span><span class="brand-accent">Vision</span></span>
+    </a>
+
+    <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+      <a href="#home" data-i18n="nav.home" class="nav-link active">الرئيسية</a>
+      <a href="#about" data-i18n="nav.about" class="nav-link">من نحن</a>
+      <a href="#services" data-i18n="nav.services" class="nav-link">الخدمات</a>
+      <a href="#work" data-i18n="nav.work" class="nav-link">أعمالنا</a>
+      <a href="#insights" data-i18n="nav.insights" class="nav-link">المدونة</a>
+      <a href="#contact" data-i18n="nav.contact" class="nav-link">تواصل معنا</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button class="lang-btn active" data-lang="ar" aria-label="العربية">AR</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button class="lang-btn" data-lang="tr" aria-label="Türkçe">TR</button>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="الوضع الداكن / الفاتح">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.8-9.2A9 9 0 0 0 12 3z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-15v2m0 16v2M4.2 4.2l1.4 1.4m12.8 12.8 1.4 1.4M2 12h2m16 0h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-primary btn-sm nav-cta" data-i18n="nav.cta">ابدأ مشروعك</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== 1. الرئيسية — Hero ===== -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-glow" id="hero-glow" aria-hidden="true">
+      <img src="logo.svg" alt="ZeynVision symbol" class="hero-logo-img">
+    </div>
+    <div class="hero-lockup">
+      <span class="hl-word"><span class="bn-zeyn">Zeyn</span><span class="brand-accent">Vision</span></span>
+      <span class="hl-tag" dir="ltr">SMART CORE <i>•</i> DATA <i>•</i> CODE <i>•</i> DESIGN</span>
+    </div>
+    <p class="hero-tag" data-i18n="hero.tag">حيث تقابل الرؤية الذكاء</p>
+    <h1 class="hero-title">
+      <span data-i18n="hero.t1">نصمّم الحلول</span>
+      <span class="grad-text" data-i18n="hero.t2">حيث يلتقي الإبداع</span>
+      <span data-i18n="hero.t3">بالهندسة والذكاء الاصطناعي</span>
+    </h1>
+    <p class="hero-sub" data-i18n="hero.sub">ZeynVision وكالة تقنية وإبداعية نخبوية تجمع التصميم البصري بالمنطق البرمجي وتحليل البيانات، لبناء منتجات رقمية ذكية تقود أسواقها.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">ابدأ مشروعك</a>
+      <a href="#services" class="btn btn-ghost" data-i18n="hero.cta2">استكشف الحلول</a>
+    </div>
+    <div class="hero-meta">
+      <span class="meta-chip"><i class="dot dot-cyan"></i><span data-i18n="hero.m1">جاهزون للعمل</span></span>
+      <span class="meta-chip"><i class="dot dot-blue"></i><span data-i18n="hero.m2">إسطنبول — عالمياً</span></span>
+    </div>
+  </div>
+  <a href="#pillars" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- ===== 2. الركائز الأربع ===== -->
+<section class="section" id="pillars">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-kicker" data-i18n="pillars.kicker">نظام متكامل</p>
+      <h2 class="sec-title" data-i18n="pillars.title">أربع ركائز تصنع الفارق</h2>
+      <p class="sec-sub" data-i18n="pillars.sub">كل مشروع يُبنى على نواة ذكية تدمج البيانات والبرمجة والتصميم في منتج واحد متماسك.</p>
+    </div>
+    <div class="pillars-grid">
+      <article class="pillar-card reveal">
+        <div class="pillar-ico ico-core">◈</div>
+        <h3 data-i18n="pillars.p1.t">نواة ذكية</h3>
+        <p data-i18n="pillars.p1.d">نماذج تعلّم آلي وذكاء اصطناعي مدمجة في صميم المنتج، لا إضافات هامشية.</p>
+      </article>
+      <article class="pillar-card reveal">
+        <div class="pillar-ico ico-data">◉</div>
+        <h3 data-i18n="pillars.p2.t">بيانات</h3>
+        <p data-i18n="pillars.p2.d">تحليل متقدم يحوّل البيانات الخام إلى قرارات دقيقة وقيمة ملموسة.</p>
+      </article>
+      <article class="pillar-card reveal">
+        <div class="pillar-ico ico-code">&lt;/&gt;</div>
+        <h3 data-i18n="pillars.p3.t">برمجة</h3>
+        <p data-i18n="pillars.p3.d">هندسة برمجية نظيفة وقابلة للتوسع بمعايير صارمة وأداء فائق.</p>
+      </article>
+      <article class="pillar-card reveal">
+        <div class="pillar-ico ico-design">✦</div>
+        <h3 data-i18n="pillars.p4.t">تصميم</h3>
+        <p data-i18n="pillars.p4.d">إبداع بصري وتجربة مستخدم تضع الإنسان في قلب كل قرار.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. العنصر التقني الحي ===== -->
+<section class="section section-alt" id="live">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-kicker" data-i18n="live.kicker">إثبات حي</p>
+      <h2 class="sec-title" data-i18n="live.title">التقنية تعمل أمامك</h2>
+      <p class="sec-sub" data-i18n="live.sub">لا وعود نظرية — كود حي وبيانات لحظية تعكس مستوى الهندسة لدينا.</p>
+    </div>
+    <div class="live-grid">
+      <div class="terminal reveal" id="terminal" role="img" aria-label="Live code demo">
+        <div class="terminal-bar">
+          <span class="t-dot r"></span><span class="t-dot y"></span><span class="t-dot g"></span>
+          <span class="t-title">vision-core.ts</span>
+        </div>
+        <pre class="terminal-body" id="terminal-body"><code></code><span class="cursor">▋</span></pre>
+      </div>
+      <div class="chart-card reveal">
+        <div class="chart-head">
+          <span data-i18n="live.chart">معالجة البيانات — لحظياً</span>
+          <span class="live-badge"><i class="dot dot-green"></i><span data-i18n="live.live">مباشر</span></span>
+        </div>
+        <div class="chart" id="live-chart" aria-hidden="true">
+          <div class="bar" style="--h:38%"><span>01</span></div>
+          <div class="bar" style="--h:62%"><span>02</span></div>
+          <div class="bar" style="--h:45%"><span>03</span></div>
+          <div class="bar" style="--h:78%"><span>04</span></div>
+          <div class="bar" style="--h:56%"><span>05</span></div>
+          <div class="bar" style="--h:88%"><span>06</span></div>
+          <div class="bar" style="--h:70%"><span>07</span></div>
+          <div class="bar" style="--h:96%"><span>08</span></div>
+          <div class="bar" style="--h:64%"><span>09</span></div>
+          <div class="bar" style="--h:84%"><span>10</span></div>
+          <div class="bar" style="--h:52%"><span>11</span></div>
+          <div class="bar" style="--h:91%"><span>12</span></div>
+        </div>
+        <div class="chart-foot">
+          <span data-i18n="live.throughput">الإنتاجية: 12.4K req/s</span>
+          <span class="chart-trend">▲ 99.98%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. شريط التقنيات ===== -->
+<section class="stack-band" id="stack">
+  <div class="container">
+    <p class="stack-label reveal" data-i18n="stack.label">نعتمد أحدث التقنيات العالمية</p>
+    <div class="stack-row reveal" id="stack-row">
+      <span class="stack-item">React</span>
+      <span class="stack-item">Next.js</span>
+      <span class="stack-item">TypeScript</span>
+      <span class="stack-item">Python</span>
+      <span class="stack-item">Node.js</span>
+      <span class="stack-item">TensorFlow</span>
+      <span class="stack-item">PostgreSQL</span>
+      <span class="stack-item">Docker</span>
+      <span class="stack-item">AWS Cloud</span>
+      <span class="stack-item">Figma</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. تقدير المشروع التفاعلي ===== -->
+<section class="section" id="estimator">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-kicker" data-i18n="est.kicker">شفافية كاملة</p>
+      <h2 class="sec-title" data-i18n="est.title">قدّر مشروعك فوراً</h2>
+      <p class="sec-sub" data-i18n="est.sub">اختر الخدمة والنطاق لتحصل على تقدير مبدئي فوري — ثم نناقش التفاصيل معاً.</p>
+    </div>
+    <div class="estimator reveal" id="estimator">
+      <div class="est-col">
+        <label class="est-label" for="est-service" data-i18n="est.service">نوع الخدمة</label>
+        <select id="est-service" class="est-select">
+          <option value="web" data-i18n="est.s.web">تطوير الويب المتقدم</option>
+          <option value="software" data-i18n="est.s.software">هندسة البرمجيات المؤسسية</option>
+          <option value="data" data-i18n="est.s.data">تحليل البيانات المتقدم</option>
+          <option value="ai" data-i18n="est.s.ai">حلول الذكاء الاصطناعي</option>
+          <option value="design" data-i18n="est.s.design">تصميم UI/UX والهوية</option>
+        </select>
+        <label class="est-label" for="est-scope" data-i18n="est.scope">نطاق المشروع</label>
+        <select id="est-scope" class="est-select">
+          <option value="small" data-i18n="est.o.small">صغير — MVP / تجريبي</option>
+          <option value="medium" data-i18n="est.o.medium">متوسط — منتج متكامل</option>
+          <option value="large" data-i18n="est.o.large">كبير — منصة مؤسسية</option>
+        </select>
+      </div>
+      <div class="est-result" id="est-result">
+        <p class="est-range" id="est-range">$8,000 – $25,000</p>
+        <p class="est-note" id="est-note" data-i18n="est.note">تقدير مبدئي — يُحدَّد بدقة بعد جلسة الاستشارة المجانية.</p>
+        <a href="#contact" class="btn btn-primary btn-sm" data-i18n="est.cta">احجز استشارة مجانية</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6. الأعمال ودراسات الحالة ===== -->
+<section class="section section-alt" id="work">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-kicker" data-i18n="work.kicker">أعمالنا</p>
+      <h2 class="sec-title" data-i18n="work.title">دراسات حالة تصنع الأثر</h2>
+      <p class="sec-sub" data-i18n="work.sub">مشاريع مختارة عبر الصناعات — من التحدي الهندسي إلى النتائج الرقمية القابلة للقياس.</p>
+    </div>
+    <div class="filters reveal" id="work-filters">
+      <button class="filter-btn active" data-filter="all" data-i18n="work.f.all">الكل</button>
+      <button class="filter-btn" data-filter="web" data-i18n="work.f.web">ويب</button>
+      <button class="filter-btn" data-filter="ai" data-i18n="work.f.ai">ذكاء اصطناعي</button>
+      <button class="filter-btn" data-filter="data" data-i18n="work.f.data">بيانات</button>
+      <button class="filter-btn" data-filter="design" data-i18n="work.f.design">تصميم</button>
+    </div>
+    <div class="work-grid" id="work-grid">
+      <article class="work-card reveal" data-cat="data">
+        <div class="work-visual v-data"><img src="img/case-analytics.webp" alt="منصة تحليلات لحظية — لوحة تحكم داكنة" loading="lazy"></div>
+        <div class="work-body">
+          <span class="work-cat" data-i18n="work.f.data">بيانات</span>
+          <h3 data-i18n="work.p1.t">منصة تحليلات لحظية</h3>
+          <p data-i18n="work.p1.d">لوحة تحكم تتعامل مع 4M حدث/يوم بتأخير أقل من 200ms.</p>
+          <div class="work-metrics"><span>+38% <em data-i18n="work.m.kpi">كفاءة تشغيلية</em></span><span>-41% <em data-i18n="work.m.cost">تكلفة تقارير</em></span></div>
+        </div>
+      </article>
+      <article class="work-card reveal" data-cat="ai">
+        <div class="work-visual v-ai"><img src="img/case-recommendations.webp" alt="محرك توصيات مخصص — تصور بيانات ذكاء اصطناعي" loading="lazy"></div>
+        <div class="work-body">
+          <span class="work-cat" data-i18n="work.f.ai">ذكاء اصطناعي</span>
+          <h3 data-i18n="work.p2.t">محرك توصيات مخصص</h3>
+          <p data-i18n="work.p2.d">نظام توصيات تعلّم ذاتي رفع معدل التحويل بنسبة 27%.</p>
+          <div class="work-metrics"><span>+27% <em data-i18n="work.m.conv">تحويل</em></span><span>96% <em data-i18n="work.m.acc">دقة</em></span></div>
+        </div>
+      </article>
+      <article class="work-card reveal" data-cat="web">
+        <div class="work-visual v-web"><img src="img/case-store.webp" alt="متجر ويب فائق الأداء — واجهة داكنة أنيقة" loading="lazy"></div>
+        <div class="work-body">
+          <span class="work-cat" data-i18n="work.f.web">ويب</span>
+          <h3 data-i18n="work.p3.t">متجر ويب فائق الأداء</h3>
+          <p data-i18n="work.p3.d">إعادة بناء كاملة حققت LCP بمقدار 0.8 ثانية ونتيجة 100 في Lighthouse.</p>
+          <div class="work-metrics"><span>100 <em data-i18n="work.m.lh">Lighthouse</em></span><span>+53% <em data-i18n="work.m.sales">مبيعات</em></span></div>
+        </div>
+      </article>
+      <article class="work-card reveal" data-cat="design">
+        <div class="work-visual v-design"><img src="img/case-design.webp" alt="هوية ونظام تصميم — شبكة بنائية وهوية بصرية" loading="lazy"></div>
+        <div class="work-body">
+          <span class="work-cat" data-i18n="work.f.design">تصميم</span>
+          <h3 data-i18n="work.p4.t">هوية ونظام تصميم</h3>
+          <p data-i18n="work.p4.d">نظام تصميم متكامل لعلامة مالية رفع رضا المستخدمين 31%.</p>
+          <div class="work-metrics"><span>+31% <em data-i18n="work.m.sat">رضا</em></span><span>12 <em data-i18n="work.m.prod">منتجات مغطاة</em></span></div>
+        </div>
+      </article>
+      <article class="work-card reveal" data-cat="ai">
+        <div class="work-visual v-ai"><img src="img/case-assistant.webp" alt="مساعد ذكي للدعم — كود برمجي" loading="lazy"></div>
+        <div class="work-body">
+          <span class="work-cat" data-i18n="work.f.ai">ذكاء اصطناعي</span>
+          <h3 data-i18n="work.p5.t">مساعد ذكي للدعم</h3>
+          <p data-i18n="work.p5.d">روبوت محادثة مؤسسي يحل 68% من التذاكر دون تدخل بشري.</p>
+          <div class="work-metrics"><span>-68% <em data-i18n="work.m.tix">تذاكر يدوية</em></span><span>24/7 <em data-i18n="work.m.svc">خدمة</em></span></div>
+        </div>
+      </article>
+      <article class="work-card reveal" data-cat="web">
+        <div class="work-visual v-web"><img src="img/case-cloud.webp" alt="بوابة مؤسسية سحابية — بنية سحابية متصلة" loading="lazy"></div>
+        <div class="work-body">
+          <span class="work-cat" data-i18n="work.f.web">ويب</span>
+          <h3 data-i18n="work.p6.t">بوابة مؤسسية سحابية</h3>
+          <p data-i18n="work.p6.d">بوابة موحّدة لـ 3 أقسام دولية بمزامنة لحظية وأمان متعدد الطبقات.</p>
+          <div class="work-metrics"><span>3 <em data-i18n="work.m.reg">مناطق</em></span><span>99.99% <em data-i18n="work.m.uptime">توافرية</em></span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. من نحن ===== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p class="sec-kicker" data-i18n="about.kicker">من نحن</p>
+        <h2 class="sec-title" data-i18n="about.title">نظام يجمع الإبداع بالمنطق</h2>
+        <p data-i18n="about.p1">ZeynVision ليست مجرد فريق — إنها منهجية. نبني جسراً دقيقاً بين الإبداع البصري والمنطق البرمجي الصارم، بحيث يكون كل قرار تصميمي مدعوماً ببيانات، وكل سطر كود يخدم رؤية واضحة.</p>
+        <p data-i18n="about.p2">بنيتنا المؤسسية مصممة للتعامل مع التعقيد: فرق هندسية متعددة التخصصات، عمليات تسليم شفافة، ومعايير جودة تُختبر بالقياس لا بالانطباع.</p>
+        <div class="values">
+          <div class="value-item reveal"><span class="v-num">01</span><div><h4 data-i18n="about.v1.t">دقة هندسية صارمة</h4><p data-i18n="about.v1.d">مواصفات مقاسة، اختبارات آلية، ومراجعات كود صارمة.</p></div></div>
+          <div class="value-item reveal"><span class="v-num">02</span><div><h4 data-i18n="about.v2.t">موثوقية مطلقة</h4><p data-i18n="about.v2.d">تسليم في الموعد، تواصل شفاف، ودعم مستمر بعد الإطلاق.</p></div></div>
+          <div class="value-item reveal"><span class="v-num">03</span><div><h4 data-i18n="about.v3.t">حلول مخصصة بالكامل</h4><p data-i18n="about.v3.d">لا قوالب جاهزة — كل حل يُبنى لسياق عملك وحده.</p></div></div>
+        </div>
+      </div>
+      <div class="stats reveal" id="stats">
+        <div class="stat"><span class="stat-num" data-count="120" data-suffix="+">0</span><span class="stat-label" data-i18n="about.s1">مشروعاً منجزاً</span></div>
+        <div class="stat"><span class="stat-num" data-count="98" data-suffix="%">0</span><span class="stat-label" data-i18n="about.s2">نسبة رضا العملاء</span></div>
+        <div class="stat"><span class="stat-num" data-count="12" data-suffix="+">0</span><span class="stat-label" data-i18n="about.s3">صناعة نخدمها</span></div>
+        <div class="stat"><span class="stat-num" data-count="24" data-suffix="/7">0</span><span class="stat-label" data-i18n="about.s4">دعم فني متواصل</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. الخدمات ===== -->
+<section class="section section-alt" id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-kicker" data-i18n="services.kicker">ما نقدمه</p>
+      <h2 class="sec-title" data-i18n="services.title">خدمات متكاملة بمعايير عالمية</h2>
+    </div>
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <span class="svc-ico">◈</span>
+        <h3 data-i18n="services.s1.t">تطوير الويب المتقدم</h3>
+        <p data-i18n="services.s1.d">تطبيقات ويب تفاعلية عالية الأداء بأحدث الأطر، مع تحسين Core Web Vitals وSEO.</p>
+        <ul class="svc-list">
+          <li data-i18n="services.s1.l1">تطبيقات React / Next.js</li>
+          <li data-i18n="services.s1.l2">متاجر وبوابات مؤسسية</li>
+          <li data-i18n="services.s1.l3">PWA وتطبيقات متجاوبة</li>
+        </ul>
+      </article>
+      <article class="service-card reveal">
+        <span class="svc-ico">&lt;/&gt;</span>
+        <h3 data-i18n="services.s2.t">هندسة البرمجيات المؤسسية</h3>
+        <p data-i18n="services.s2.d">أنظمة خلفية موثوقة، واجهات API، وهندسة سحابية قابلة للتوسع لعشرات الملايين من الطلبات.</p>
+        <ul class="svc-list">
+          <li data-i18n="services.s2.l1">Node.js / Python / Go</li>
+          <li data-i18n="services.s2.l2">بنية Microservices</li>
+          <li data-i18n="services.s2.l3">DevOps و CI/CD و Kubernetes</li>
+        </ul>
+      </article>
+      <article class="service-card reveal">
+        <span class="svc-ico">◉</span>
+        <h3 data-i18n="services.s3.t">تحليل البيانات المتقدم</h3>
+        <p data-i18n="services.s3.d">مستودعات بيانات، لوحات تحكم حية، ونماذج تنبؤية تحوّل البيانات إلى ميزة تنافسية.</p>
+        <ul class="svc-list">
+          <li data-i18n="services.s3.l1">Data Warehousing و ETL</li>
+          <li data-i18n="services.s3.l2">لوحات BI لحظية</li>
+          <li data-i18n="services.s3.l3">نمذجة تنبؤية وتحليلات سلوكية</li>
+        </ul>
+      </article>
+      <article class="service-card reveal">
+        <span class="svc-ico">✦</span>
+        <h3 data-i18n="services.s4.t">حلول الذكاء الاصطناعي</h3>
+        <p data-i18n="services.s4.d">ننقل نماذج التعلّم الآلي من المختبر إلى الإنتاج: LLM، رؤية حاسوبية، وتوصيات.</p>
+        <ul class="svc-list">
+          <li data-i18n="services.s4.l1">مساعدات LLM و RAG</li>
+          <li data-i18n="services.s4.l2">رؤية حاسوبية ومعالجة لغة</li>
+          <li data-i18n="services.s4.l3">MLOps وتوسيع النماذج</li>
+        </ul>
+      </article>
+      <article class="service-card reveal">
+        <span class="svc-ico">❖</span>
+        <h3 data-i18n="services.s5.t">التصميم الإبداعي و UI/UX</h3>
+        <p data-i18n="services.s5.d">هويات بصرية، أنظمة تصميم، وتجارب مستخدم مدروسة تبنى على البحث والاختبار.</p>
+        <ul class="svc-list">
+          <li data-i18n="services.s5.l1">هوية بصرية وشعارات</li>
+          <li data-i18n="services.s5.l2">Design Systems</li>
+          <li data-i18n="services.s5.l3">اختبارات قابلية استخدام</li>
+        </ul>
+      </article>
+      <article class="service-card service-card-cta reveal">
+        <span class="svc-ico">→</span>
+        <h3 data-i18n="services.s6.t">مشروعك هنا</h3>
+        <p data-i18n="services.s6.d">أخبرنا عن هدفك، وسنرسم لك خارطة طريق تقنية واضحة خلال 48 ساعة.</p>
+        <a href="#contact" class="btn btn-primary btn-sm" data-i18n="services.s6.cta">تحدث معنا</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9. المدونة والتقارير ===== -->
+<section class="section" id="insights">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-kicker" data-i18n="insights.kicker">المدونة والتقارير</p>
+      <h2 class="sec-title" data-i18n="insights.title">رؤى تقنية معمّقة</h2>
+      <p class="sec-sub" data-i18n="insights.sub">مقالات وتقارير تعزز موقعنا كمرجع تقني قطاعي.</p>
+    </div>
+    <div class="insights-grid">
+      <article class="insight-card reveal clickable" data-article="mlops" id="insight-mlops">
+        <img class="ins-cover" src="img/blog-mlops.webp" alt="MLOps دليل" loading="lazy">
+        <span class="ins-cat" data-i18n="insights.c1">ذكاء اصطناعي</span>
+        <h3 data-i18n="insights.i1.t">من النموذج إلى الإنتاج: دليل MLOps العملي</h3>
+        <p data-i18n="insights.i1.d">كيف تنقل نماذج التعلّم الآلي إلى بيئة إنتاج مستقرة ومراقبة.</p>
+        <span class="ins-read" data-i18n="insights.read">اقرأ المقال</span>
+      </article>
+      <article class="insight-card reveal clickable" data-article="cwv" id="insight-cwv">
+        <img class="ins-cover" src="img/blog-cwv.webp" alt="Core Web Vitals" loading="lazy">
+        <span class="ins-cat" data-i18n="insights.c2">أداء</span>
+        <h3 data-i18n="insights.i2.t">Core Web Vitals: معيار النجاح الجديد</h3>
+        <p data-i18n="insights.i2.d">لماذا أصبحت سرعة التحميل مقياساً حاسماً للتجربة وترتيب البحث؟</p>
+        <span class="ins-read" data-i18n="insights.read">اقرأ المقال</span>
+      </article>
+      <article class="insight-card reveal clickable" data-article="minimalism">
+        <img class="ins-cover" src="img/blog-minimalism.webp" alt="البساطة المتطرفة" loading="lazy">
+        <span class="ins-cat" data-i18n="insights.c3">تصميم</span>
+        <h3 data-i18n="insights.i3.t">البساطة المتطرفة في واجهات المستقبل</h3>
+        <p data-i18n="insights.i3.d">لماذا تقود المساحات البيضاء والخطوط الهندسية تجربة المستخدم الحديثة؟</p>
+        <span class="ins-read" data-i18n="insights.read">اقرأ المقال</span>
+      </article>
+      <article class="insight-card reveal clickable" data-article="streaming">
+        <img class="ins-cover" src="img/blog-streaming.webp" alt="البيانات اللحظية" loading="lazy">
+        <span class="ins-cat" data-i18n="insights.c4">بيانات</span>
+        <h3 data-i18n="insights.i4.t">البيانات لحظية: هندسة البث الحديثة</h3>
+        <p data-i18n="insights.i4.d">من Kafka إلى التحليل اللحظي — كيف نبني أنظمة بيانات تواكب الثانية؟</p>
+        <span class="ins-read" data-i18n="insights.read">اقرأ المقال</span>
+      </article>
+      <article class="insight-card reveal clickable" data-article="security">
+        <img class="ins-cover" src="img/blog-security.webp" alt="أمان التطبيقات" loading="lazy">
+        <span class="ins-cat" data-i18n="insights.c5">أمن</span>
+        <h3 data-i18n="insights.i5.t">أمان التطبيقات الحديثة: طبقات لا جدران</h3>
+        <p data-i18n="insights.i5.d">منهجية الدفاع المتعدد الطبقات لحماية منتجاتك الرقمية.</p>
+        <span class="ins-read" data-i18n="insights.read">اقرأ المقال</span>
+      </article>
+      <article class="insight-card reveal clickable" data-article="transformation">
+        <img class="ins-cover" src="img/blog-transformation.webp" alt="التحول الرقمي" loading="lazy">
+        <span class="ins-cat" data-i18n="insights.c6">استراتيجية</span>
+        <h3 data-i18n="insights.i6.t">التحول الرقمي ليس مشروعاً تقنياً</h3>
+        <p data-i18n="insights.i6.d">لماذا يفشل 70% من برامج التحول، وكيف نبني استراتيجية تصمد؟</p>
+        <span class="ins-read" data-i18n="insights.read">اقرأ المقال</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 10. تواصل معنا ===== -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-kicker" data-i18n="contact.kicker">تواصل معنا</p>
+      <h2 class="sec-title" data-i18n="contact.title">لنبدأ مشروعك القادم</h2>
+      <p class="sec-sub" data-i18n="contact.sub">أخبرنا عن فكرتك — نرد خلال 24 ساعة بخطة واضحة واستشارة مجانية.</p>
+    </div>
+    <div class="contact-grid">
+      <form class="contact-form reveal" id="contact-form" novalidate>
+        <div class="f-row">
+          <div class="f-field">
+            <label for="c-name" data-i18n="contact.f.name">الاسم الكامل</label>
+            <input type="text" id="c-name" name="name" required data-i18n-ph="contact.f.namePh" placeholder="مثال: أحمد الكيلاني">
+          </div>
+          <div class="f-field">
+            <label for="c-email" data-i18n="contact.f.email">البريد الإلكتروني</label>
+            <input type="email" id="c-email" name="email" required data-i18n-ph="contact.f.emailPh" placeholder="you@company.com">
+          </div>
+        </div>
+        <div class="f-row">
+          <div class="f-field">
+            <label for="c-service" data-i18n="contact.f.svc">الخدمة المطلوبة</label>
+            <select id="c-service" name="service">
+              <option data-i18n="est.s.web">تطوير الويب المتقدم</option>
+              <option data-i18n="est.s.software">هندسة البرمجيات المؤسسية</option>
+              <option data-i18n="est.s.data">تحليل البيانات المتقدم</option>
+              <option data-i18n="est.s.ai">حلول الذكاء الاصطناعي</option>
+              <option data-i18n="est.s.design">تصميم UI/UX والهوية</option>
+            </select>
+          </div>
+          <div class="f-field">
+            <label for="c-budget" data-i18n="contact.f.budget">الميزانية التقريبية</label>
+            <select id="c-budget" name="budget">
+              <option data-i18n="contact.b1">&lt; $10K</option>
+              <option data-i18n="contact.b2">$10K – $50K</option>
+              <option data-i18n="contact.b3">$50K – $150K</option>
+              <option data-i18n="contact.b4">&gt; $150K</option>
+            </select>
+          </div>
+        </div>
+        <div class="f-field">
+          <label for="c-msg" data-i18n="contact.f.msg">تفاصيل المشروع</label>
+          <textarea id="c-msg" name="message" rows="4" required data-i18n-ph="contact.f.msgPh" placeholder="صف هدفك، نطاق العمل، والجدول الزمني المتوقع..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" data-i18n="contact.f.submit">أرسل الطلب</button>
+        <p class="form-ok" id="form-ok" data-i18n="contact.ok" hidden>✓ تم استلام طلبك — سيتواصل معك فريقنا خلال 24 ساعة.</p>
+      </form>
+      <aside class="contact-info reveal">
+        <div class="ci-item">
+          <span class="ci-ico">⌖</span>
+          <div><h4 data-i18n="contact.hq">المقر الرئيسي</h4><p data-i18n="contact.hq1">Levent، إسطنبول، تركيا</p></div>
+        </div>
+        <div class="ci-item">
+          <span class="ci-ico">✉</span>
+          <div><h4 data-i18n="contact.em">البريد</h4><p dir="ltr">omar@zeynvision.com</p></div>
+        </div>
+        <div class="ci-item">
+          <span class="ci-ico">☏</span>
+          <div><h4 data-i18n="contact.ph">الهاتف</h4><p dir="ltr">+966 50 123 4567</p></div>
+        </div>
+        <div class="ci-item">
+          <span class="ci-ico">◉</span>
+          <div><h4 data-i18n="contact.web">الموقع</h4><p dir="ltr">www.zeynvision.com</p></div>
+        </div>
+        <div class="ci-item">
+          <span class="ci-ico">◷</span>
+          <div><h4 data-i18n="contact.hrs">ساعات العمل</h4><p data-i18n="contact.hrs1">الاثنين – الجمعة، 09:00 – 18:00</p></div>
+        </div>
+        <button class="btn btn-ghost btn-block" id="open-consult" data-i18n="contact.consult">احجز استشارة فورية</button>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== الفوتر ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="f-brand">
+        <a href="#home" class="brand">
+          <img src="logo.svg" class="logo-mark" alt="ZeynVision logo">
+          <span class="brand-name"><span class="bn-zeyn">Zeyn</span><span class="brand-accent">Vision</span></span>
+        </a>
+        <p data-i18n="footer.tag">وكالة تقنية وإبداعية — حيث تقابل الرؤية الذكاء.</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="X">𝕏</a>
+          <a href="#" aria-label="Instagram">◉</a>
+          <a href="#" aria-label="GitHub">⌥</a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4 data-i18n="footer.nav">الموقع</h4>
+        <a href="#home" data-i18n="nav.home">الرئيسية</a>
+        <a href="#about" data-i18n="nav.about">من نحن</a>
+        <a href="#services" data-i18n="nav.services">الخدمات</a>
+        <a href="#work" data-i18n="nav.work">أعمالنا</a>
+        <a href="#insights" data-i18n="nav.insights">المدونة</a>
+      </div>
+      <div class="f-col">
+        <h4 data-i18n="footer.services">الخدمات</h4>
+        <a href="#services" data-i18n="est.s.web">تطوير الويب المتقدم</a>
+        <a href="#services" data-i18n="est.s.software">هندسة البرمجيات</a>
+        <a href="#services" data-i18n="est.s.data">تحليل البيانات</a>
+        <a href="#services" data-i18n="est.s.ai">حلول الذكاء الاصطناعي</a>
+        <a href="#services" data-i18n="est.s.design">تصميم UI/UX</a>
+      </div>
+      <div class="f-col">
+        <h4 data-i18n="footer.legal">قانوني</h4>
+        <a href="#" class="legal-link" data-legal="privacy" data-i18n="footer.privacy">سياسة الخصوصية</a>
+        <a href="#" class="legal-link" data-legal="terms" data-i18n="footer.terms">شروط الخدمة</a>
+        <a href="#" class="legal-link" data-legal="cookies" data-i18n="footer.cookies">سياسة ملفات الارتباط</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ZeynVision. <span data-i18n="footer.rights">جميع الحقوق محفوظة.</span></span>
+      <span class="footer-tagline" data-i18n="hero.tag">حيث تقابل الرؤية الذكاء</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== نافذة حجز الاستشارة ===== -->
+<div class="modal" id="consult-modal" role="dialog" aria-modal="true" aria-labelledby="consult-title">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <h3 id="consult-title" data-i18n="modal.c.title">احجز استشارة فورية</h3>
+    <p class="modal-sub" data-i18n="modal.c.sub">اجتماع تقديري مجاني (30 دقيقة) مع فريقنا الهندسي.</p>
+    <form id="consult-form" novalidate>
+      <div class="f-field">
+        <label for="q-name" data-i18n="modal.c.name">الاسم</label>
+        <input type="text" id="q-name" required data-i18n-ph="contact.f.namePh" placeholder="الاسم الكامل">
+      </div>
+      <div class="f-field">
+        <label for="q-email" data-i18n="modal.c.email">البريد الإلكتروني</label>
+        <input type="email" id="q-email" required data-i18n-ph="contact.f.emailPh" placeholder="you@company.com">
+      </div>
+      <div class="f-field">
+        <label for="q-date" data-i18n="modal.c.date">اليوم</label>
+        <input type="date" id="q-date" required>
+      </div>
+      <div class="f-field">
+        <label data-i18n="modal.c.time">الوقت</label>
+        <div class="time-slots" id="time-slots">
+          <button type="button" class="slot active">09:00</button>
+          <button type="button" class="slot">11:00</button>
+          <button type="button" class="slot">14:00</button>
+          <button type="button" class="slot">16:30</button>
+          <button type="button" class="slot">18:00</button>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" data-i18n="modal.c.submit">تأكيد الحجز</button>
+      <p class="form-ok" id="consult-ok" hidden data-i18n="modal.c.ok">✓ تم تأكيد حجزك — سنرسل دعوة الاجتماع لبريدك.</p>
+    </form>
+  </div>
+</div>
+
+<!-- ===== نافذة التقدير السريع (Exit Intent) ===== -->
+<div class="modal" id="quote-modal" role="dialog" aria-modal="true" aria-labelledby="quote-title">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <h3 id="quote-title" data-i18n="modal.q.title">انتظر — خصم 10% لمشروعك الأول</h3>
+    <p class="modal-sub" data-i18n="modal.q.sub">اترك بياناتك ونعاود الاتصال خلال 24 ساعة بتقدير أولي مجاني.</p>
+    <form id="quote-form" novalidate>
+      <div class="f-field">
+        <label for="qt-name" data-i18n="modal.c.name">الاسم</label>
+        <input type="text" id="qt-name" required data-i18n-ph="contact.f.namePh" placeholder="الاسم الكامل">
+      </div>
+      <div class="f-field">
+        <label for="qt-email" data-i18n="modal.c.email">البريد الإلكتروني</label>
+        <input type="email" id="qt-email" required data-i18n-ph="contact.f.emailPh" placeholder="you@company.com">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" data-i18n="modal.q.submit">أرسل تفاصيلي</button>
+      <p class="form-ok" id="quote-ok" hidden data-i18n="modal.q.ok">✓ تم الاستلام — سنتواصل معك قريباً.</p>
+    </form>
+  </div>
+</div>
+
+<!-- ===== نافذة المقال الكامل: MLOps ===== -->
+<div class="modal" id="article-modal-mlops" role="dialog" aria-modal="true" aria-labelledby="article-title-mlops">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card article-modal">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <span class="ins-cat" data-i18n="insights.c1">ذكاء اصطناعي</span>
+    <h3 id="article-title-mlops" data-i18n="insights.art.mlops.title">من النموذج إلى الإنتاج: دليل MLOps الهندسي لبناء أنظمة ذكاء اصطناعي مستقرة ومستدامة</h3>
+    <p class="article-byline" data-i18n="insights.art.mlops.by">بقلم: فريق الهندسة والتطوير في ZeynVision</p>
+
+    <!-- النسخة العربية -->
+    <div class="article-lang" data-lang="ar">
+      <div class="article-body">
+        <p class="article-lead">مقدمة</p>
+        <p>في مشهد التكنولوجيا الحديث، تكمن الفجوة الكبرى غالباً بين النجاح النظري لنموذج التعلم الآلي داخل بيئة تجريبية معزولة وبين تشغيله بكفاءة وموثوقية عالية في بيئة الإنتاج الحية (Production). في ZeynVision، نؤمن بأن الحلول التقنية المتقدمة لا قيمة لها إن لم ترتكز على بنية تحتية هندسية محكمة، وصارمة، وقابلة للتوسع. من هنا يأتي مفهوم MLOps (عمليات التعلم الآلي) ليشكل الجسر الحاسم الذي يدمج هندسة البرمجيات بالذكاء الاصطناعي لتحويل النماذج إلى أصول إنتاجية مستقرة.</p>
+
+        <h4>أولاً: إدارة النسخ والتحكم في البيانات (Data Version Control)</h4>
+        <p>النموذج الناجح يبدأ من بيانات نظيفة وموثوقة. على عكس هندسة البرمجيات التقليدية التي تتعامل مع الشيفرات البرمجية وحدها، تتطلب أنظمة التعلم الآلي تتبُّعاً متزامناً لنسخ البيانات، والخصائص (Features)، والرموز البرمجية معاً.</p>
+        <ul>
+          <li><strong>تتبع البيانات:</strong> استخدام أنظمة متقدمة لتسجيل التغييرات في مجموعات البيانات لضمان إمكانية إعادة إنتاج النتائج (Reproducibility) بدقة متناهية.</li>
+          <li><strong>مستودعات الميزات (Feature Stores):</strong> توحيد استخدام الميزات بين فرق علوم البيانات والإنتاج لتجنب التناقض في العمليات الحسابية وضمان استقرار المدخلات.</li>
+        </ul>
+
+        <h4>ثانياً: خطوط الأنابيب الآلية والتكامل المستمر (CI/CD for Machine Learning)</h4>
+        <p>إن نقل النموذج يدويّاً من بيئة المطور إلى خوادم الإنتاج يمثل نقطة ضعف هي الأبرز في الأنظمة الهشة. يتطلب بناء بيئة مستقرة أتمتة كاملة لدورة حياة النموذج:</p>
+        <ul>
+          <li><strong>التكامل المستمر (CI):</strong> اختبار الشيفرات واختبار صحة أداء النموذج ووظائفه تلقائياً عند إجراء أي تعديل برمجي.</li>
+          <li><strong>النشر المستمر (CD):</strong> أتمتة عملية طرح النماذج المُحدثة وتحديث الخدمات السحابية بسلاسة دون أي انقطاع في تجربة النظام (Zero-Downtime Deployment).</li>
+        </ul>
+
+        <h4>ثالثاً: بنية الاستدلال ونشر النماذج (Model Serving &amp; Inference Architecture)</h4>
+        <p>يعتمد نجاح النظام في بيئة الإنتاج على كيفية استجابة النموذج لطلبات المستخدمين أو الأنظمة الأخرى:</p>
+        <ul>
+          <li><strong>الاستدلال الفوري (Real-time Inference):</strong> بناء واجهات برمجية عالية الأداء باستخدام أطر عمل مثل FastAPI أو gRPC، مدعومة بحاويات Docker ومنظومات التنسيق مثل Kubernetes لضمان المرونة والتحمل العالي.</li>
+          <li><strong>الاستدلال الدفعي (Batch Inference):</strong> معالجة كتل ضخمة من البيانات في أوقات مجدولة لتحسين الكفاءة الحسابية وتقليل تكاليف التشغيل.</li>
+        </ul>
+
+        <h4>رابعاً: المراقبة والملاحظة المستمرة (Monitoring &amp; Observability)</h4>
+        <p>نشر النموذج لا يمثل محطة النهاية، بل هو البداية الحقيقية لدورة حياته التشغيلية. تتعرض نماذج التعلم الآلي لتحديات تشغيلية فريدة مع مرور الوقت:</p>
+        <ul>
+          <li><strong>الانحراف في بيانات الإدخال (Data Drift):</strong> رصد التغير التدريجي في توزيع البيانات الحية مقارنة ببيانات التدريب الأصلية.</li>
+          <li><strong>الانحراف في المفاهيم (Concept Drift):</strong> اكتشاف تغير العلاقة الإحصائية بين المدخلات والمخرجات نتيجة تحول الظروف التشغيلية.</li>
+          <li><strong>المراقبة اللحظية:</strong> تتبع استهلاك الموارد المادية (CPU/GPU)، زمن الاستجابة (Latency)، ودقة التنبؤات لضمان التدخل الفوري قبل تأثر الأداء العام للنظام.</li>
+        </ul>
+
+        <h4>خاتمة</h4>
+        <p>في ZeynVision، نرى أن MLOps ليس مجرد مجموعة من الأدوات التقنية، بل هو نهج هندسي متكامل يضمن تحويل الأفكار الرياضية والنماذج الخوارزمية إلى أنظمة ذكية مستدامة وعالية الأداء. الاستقرار في بيئة الإنتاج ليس وليد الصدفة، بل هو ثمرة مباشرة للهندسة الدقيقة، والتصميم المعماري المحكم، والمراقبة الصارمة.</p>
+      </div>
+    </div>
+
+    <!-- English version -->
+    <div class="article-lang" data-lang="en" hidden>
+      <div class="article-body">
+        <p class="article-lead">Introduction</p>
+        <p>In the modern technology landscape, the greatest chasm often lies between the theoretical success of a machine learning model within an isolated experimental environment and its efficient, reliable deployment in a live production environment. At ZeynVision, we believe that advanced technical solutions hold no value unless anchored in rigorous, disciplined, and scalable engineering infrastructure. This is where MLOps (Machine Learning Operations) serves as the critical bridge uniting software engineering with artificial intelligence to transform models into stable production assets.</p>
+
+        <h4>I. Data Version Control and Traceability</h4>
+        <p>A successful model begins with clean and reliable data. Unlike traditional software engineering, which deals exclusively with source code, machine learning systems require synchronized tracking of data versions, features, and code simultaneously.</p>
+        <ul>
+          <li><strong>Data Versioning:</strong> Utilizing advanced systems to record changes in datasets to ensure absolute reproducibility of results.</li>
+          <li><strong>Feature Stores:</strong> Standardizing feature usage between data science and production engineering teams to prevent calculation discrepancies and ensure input stability.</li>
+        </ul>
+
+        <h4>II. Automated Pipelines and Continuous Integration (CI/CD for Machine Learning)</h4>
+        <p>Manually moving a model from a developer's environment to production servers represents the most vulnerable point in fragile architectures. Building a stable environment requires complete automation of the model's lifecycle:</p>
+        <ul>
+          <li><strong>Continuous Integration (CI):</strong> Automatically testing code, model performance validity, and functions upon any software modification.</li>
+          <li><strong>Continuous Deployment (CD):</strong> Automating the rollout of updated models and updating cloud services seamlessly without any system downtime (Zero-Downtime Deployment).</li>
+        </ul>
+
+        <h4>III. Model Serving and Inference Architecture</h4>
+        <p>The success of a system in production depends heavily on how the model responds to requests from users or other systems:</p>
+        <ul>
+          <li><strong>Real-time Inference:</strong> Building high-performance application programming interfaces using frameworks like FastAPI or gRPC, powered by Docker containers and orchestration systems like Kubernetes to ensure flexibility and high concurrency.</li>
+          <li><strong>Batch Inference:</strong> Processing massive blocks of data at scheduled intervals to optimize computational efficiency and lower operational costs.</li>
+        </ul>
+
+        <h4>IV. Continuous Monitoring and Observability</h4>
+        <p>Deploying a model does not mark the end of the journey; it is the true beginning of its operational lifecycle. Machine learning models face unique operational challenges over time:</p>
+        <ul>
+          <li><strong>Data Drift:</strong> Tracking gradual changes in live data distributions compared to original training data.</li>
+          <li><strong>Concept Drift:</strong> Detecting shifts in the statistical relationship between inputs and outputs resulting from evolving operational conditions.</li>
+          <li><strong>Real-time Monitoring:</strong> Tracking hardware resource consumption (CPU/GPU), latency, and prediction accuracy to ensure immediate intervention before system performance is affected.</li>
+        </ul>
+
+        <h4>Conclusion</h4>
+        <p>At ZeynVision, we view MLOps not merely as a collection of technical tools, but as an integrated engineering approach ensuring that mathematical ideas and algorithmic models are transformed into sustainable, high-performance intelligent systems. Stability in production is never a coincidence; it is the direct outcome of meticulous engineering, robust architectural design, and rigorous monitoring.</p>
+      </div>
+    </div>
+    <!-- Türkçe sürüm -->
+    <div class="article-lang" data-lang="tr" hidden>
+      <div class="article-body">
+        <p class="article-lead">Giriş</p>
+        <p>Modern teknoloji dünyasında, izole bir deneysel ortamdaki bir makine öğrenmesi modelinin teorik başarısı ile canlı üretim ortamındaki verimli ve güvenilir çalışması arasındaki uçurum oldukça büyüktür. ZeynVision olarak, ileri düzey teknik çözümlerin titiz, disiplinli ve ölçeklenebilir bir mühendislik altyapısına dayanmadığı sürece hiçbir değer taşımadığına inanıyoruz. İşte MLOps (Makine Öğrenmesi Operasyonları), yazılım mühendisliğini yapay zeka ile birleştirerek modelleri kararlı üretim varlıklarına dönüştüren kritik köprü görevi burada devreye girer.</p>
+
+        <h4>I. Veri Sürüm Kontrolü ve İzlenebilirlik</h4>
+        <p>Başarılı bir model, temiz ve güvenilir verilerle başlar. Yalnızca kaynak kodla ilgilenen geleneksel yazılım mühendisliğinin aksine, makine öğrenmesi sistemleri veri sürümlerinin, özelliklerin (features) ve kodun eşzamanlı olarak takip edilmesini gerektirir.</p>
+        <ul>
+          <li><strong>Veri Sürümleme (Data Versioning):</strong> Sonuçların mutlak düzeyde yeniden üretilebilirliğini (reproducibility) garanti etmek için veri setlerindeki değişiklikleri kaydeden gelişmiş sistemlerin kullanılması.</li>
+          <li><strong>Özellik Mağazaları (Feature Stores):</strong> Veri bilimi ve üretim mühendisliği ekipleri arasında hesaplama tutarsızlıklarını önlemek ve girdi kararlılığını sağlamak için özellik kullanımının standartlaştırılması.</li>
+        </ul>
+
+        <h4>II. Otomatik İş Hatları ve Sürekli Entegrasyon (Makine Öğrenmesi için CI/CD)</h4>
+        <p>Bir modeli geliştiricinin ortamından üretim sunucularına manuel olarak taşımak, kırılgan mimarilerdeki en zayıf noktayı temsil eder. Kararlı bir ortam oluşturmak, modelin yaşam döngüsünün tamamen otomasyona bağlanmasını gerektirir:</p>
+        <ul>
+          <li><strong>Sürekli Entegrasyon (CI):</strong> Herhangi bir yazılım değişikliği yapıldığında kodun, model performans geçerliliğinin ve işlevlerinin otomatik olarak test edilmesi.</li>
+          <li><strong>Sürekli Dağıtım (CD):</strong> Güncellenen modellerin sunumunun otomatikleştirilmesi ve bulut hizmetlerinin herhangi bir sistem kesintisi yaşamadan sorunsuz bir şekilde güncellenmesi (Sıfır Kesintiyle Dağıtım - Zero-Downtime Deployment).</li>
+        </ul>
+
+        <h4>III. Model Sunumu ve Çıkarım Mimarisi</h4>
+        <p>Bir sistemin üretim ortamındaki başarısı, modelin kullanıcıların veya diğer sistemlerin isteklerine ne kadar iyi yanıt verdiğine büyük ölçüde bağlıdır:</p>
+        <ul>
+          <li><strong>Gerçek Zamanlı Çıkarım (Real-time Inference):</strong> Esnekliği ve yüksek eşzamanlılığı garanti etmek için Docker konteynerleri ve Kubernetes gibi düzenleme sistemleriyle desteklenen FastAPI veya gRPC gibi çerçeveler kullanılarak yüksek performanslı uygulama programlama arayüzlerinin (API) oluşturulması.</li>
+          <li><strong>Toplu Çıkarım (Batch Inference):</strong> Hesaplama verimliliğini optimize etmek ve operasyonel maliyetleri düşürmek için devasa veri bloklarının zamanlanmış aralıklarla işlenmesi.</li>
+        </ul>
+
+        <h4>IV. Sürekli İzleme ve Gözlemlenebilirlik</h4>
+        <p>Bir modelin devreye alınması yolculuğun sonunu işaret etmez; operasyonel yaşam döngüsünün gerçek başlangıcıdır. Makine öğrenmesi modelleri zaman içinde benzersiz operasyonel zorluklarla karşılaşır:</p>
+        <ul>
+          <li><strong>Girdi Verisi Sapması (Data Drift):</strong> Orijinal eğitim verilerine kıyasla canlı veri dağılımlarındaki kademeli değişikliklerin izlenmesi.</li>
+          <li><strong>Kavram Sapması (Concept Drift):</strong> Gelişen operasyonel koşulların bir sonucu olarak girdiler ile çıktılar arasındaki istatistiksel ilişkideki kaymaların tespit edilmesi.</li>
+          <li><strong>Gerçek Zamanlı İzleme:</strong> Genel sistem performansını etkilemeden önce acil müdahaleyi garanti etmek için donanım kaynağı tüketimini (CPU/GPU), gecikmeyi (latency) ve tahmin doğruluğunu takip etmek.</li>
+        </ul>
+
+        <h4>Sonuç</h4>
+        <p>ZeynVision olarak MLOps'u yalnızca teknik araçların bir koleksiyonu olarak değil, matematiksel fikirlerin ve algoritmik modellerin sürdürülebilir, yüksek performanslı akıllı sistemlere dönüştürülmesini sağlayan entegre bir mühendislik yaklaşımı olarak görüyoruz. Üretimde kararlılık asla tesadüf değildir; titiz mühendisliğin, sağlam mimari tasarımın ve katı izlemenin doğrudan sonucudur.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== نافذة المقال الكامل: Core Web Vitals ===== -->
+<div class="modal" id="article-modal-cwv" role="dialog" aria-modal="true" aria-labelledby="article-title-cwv">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card article-modal">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <span class="ins-cat" data-i18n="insights.c2">أداء</span>
+    <h3 id="article-title-cwv" data-i18n="insights.art.cwv.title">Core Web Vitals: معيار النجاح الجديد للأداء الرقمي وتجربة المستخدم</h3>
+    <p class="article-byline" data-i18n="insights.art.cwv.by">بقلم: فريق الهندسة والتطوير في ZeynVision</p>
+
+    <!-- النسخة العربية -->
+    <div class="article-lang" data-lang="ar">
+      <div class="article-body">
+        <p class="article-lead">مقدمة</p>
+        <p>في مشهد التكنولوجيا الرقمية المعاصر، لم تعد سرعة مواقع الويب مجرد ميزة تنافسية إضافية، بل تحولت إلى معيار هندسي أساسي يحدد مدى كفاءة المنصات وقدرتها على البقاء في صدارة نتائج البحث. في ZeynVision، نؤمن بأن التطوير البرمجي الراقي لا يقاس فقط بجمالية الواجهات، بل بمدى دقة البنية التحتية واستجابتها الفورية للمستخدم. من هنا برزت مؤشرات الأداء الأساسية للويب (Core Web Vitals) لتشكل التحول الأبرز في كيفية تقييم محركات البحث وتجربة المستخدم للأنظمة الرقمية.</p>
+
+        <h4>أولاً: ما هي مؤشرات Core Web Vitals؟</h4>
+        <p>تعد هذه المؤشرات مجموعة من القيايس الدقيقة التي اعتمدتها محركات البحث لقياس الجودة الفعلية لتجربة المستخدم على الويب، وتتكون من ثلاثة أعمدة رئيسية:</p>
+        <ul>
+          <li><strong>سرعة تحميل المحتوى الأكبر (Largest Contentful Paint - LCP):</strong> تقيس الوقت المستغرق لظهور أكبر عنصر مرئي (مثل صورة رئيسية أو كتلة نصية أساسية) داخل نافذة العرض. المعيار المثالي هو أن يتم تحميل هذا العنصر خلال أقل من 2.5 ثانية.</li>
+          <li><strong>الاستجابة والتفاعل (Interaction to Next Paint - INP):</strong> تقيس استجابة الصفحة للتفاعلات النصية أو النقرات التي يقوم بها المستخدم، مما يضمن خلو التطبيق من أي تأخير ملحوظ أثناء التصفح.</li>
+          <li><strong>الثبات البصري (Cumulative Layout Shift - CLS):</strong> تقيس مدى استقرار العناصر البصرية أثناء التحميل لمنع "القفزات المفاجئة" للنصوص أو الأزرار، والتي غالباً ما تؤدي إلى نقرات خاطئة وتجربة مستخدم سيئة.</li>
+        </ul>
+
+        <h4>ثانياً: لماذا أصبحت السرعة وتجربة المستخدم معياراً حاسماً لترتيب البحث؟</h4>
+        <p>لم تعد خوارزميات البحث الحديثة تعتمد فقط على توافق الكلمات المفتاحية، بل تحولت نحو التركيز المطلق على رضا المستخدم وسلوكياته.</p>
+        <ul>
+          <li><strong>انخفاض معدلات الارتداد (Bounce Rate):</strong> المواقع البطيئة تفقد نسبة كبيرة من زوارها في ثوانٍ معدودة قبل حتى أن يتم تحميل محتواها.</li>
+          <li><strong>التحول نحو الأجهزة المحمولة:</strong> مع هيمنة الهواتف الذكية على حركة الويب العالمية، أصبحت البنية البرمجية الخفيفة والمهندسة بعناية شرطاً إجبارياً لضمان الاستقرار عبر مختلف الشاشات.</li>
+          <li><strong>الخوارزميات الذكية:</strong> تمنح محركات البحث اليوم أفضلية صريحة للمنصات التي تحقق معايير Core Web Vitals المرتفعة، باعتبارها دليلاً قاطعاً على جودة الخدمة والموثوقية التقنية للجهة المالكة للموقع.</li>
+        </ul>
+
+        <h4>ثالثاً: الهندسة البرمجية خلف الأداء الفائق في ZeynVision</h4>
+        <p>إن الالتزام بمعايير الأداء المتقدمة لا يتحقق بالصدفة، بل يتطلب هندسة برمجية صارمة تعتمد على ركائز واضحة:</p>
+        <ul>
+          <li><strong>البساطة المتطرفة (Extreme Minimalism):</strong> التخلص من أي شيفرات أو ملفات برمجية زائدة لا طائل منها، مما يخفض حجم البيانات المنقولة إلى الحد الأدنى.</li>
+          <li><strong>تحسين أوقات الاستجابة:</strong> هندسة الخوادم وبنى البيانات لضمان معالجة الطلبات في أجزاء من الثانية.</li>
+          <li><strong>التصميم المتجاوب والخفيف:</strong> بناء واجهات لا تثقل متصفح المستخدم وتدعم التشغيل السلس بأعلى كفاءة ممكنة.</li>
+        </ul>
+
+        <h4>خاتمة</h4>
+        <p>في ZeynVision، ننظر إلى Core Web Vitals ليس كقواعد تقنية يجب اجتيازها فقط، بل كمنهج عمل يعكس التزامنا المطلق بالجودة الهندسية. السرعة والتجربة السلسة هما الوجه الآخر للاحترافية الرقمية، وهما الفاصل الحقيقي بين منصة رقمية عادية وأخرى تقود قطاعها بثبات واقتدار.</p>
+      </div>
+    </div>
+
+    <!-- English version -->
+    <div class="article-lang" data-lang="en" hidden>
+      <div class="article-body">
+        <p class="article-lead">Introduction</p>
+        <p>In the contemporary digital technology landscape, website speed is no longer just an additional competitive advantage; it has evolved into a fundamental engineering metric that determines platform efficiency and the ability to stay ahead in search rankings. At ZeynVision, we believe that sophisticated software development is measured not only by the aesthetic appeal of interfaces, but by the precision of the infrastructure and its instantaneous responsiveness to the user. This is where Core Web Vitals emerge as a pivotal transformation in how search engines and users evaluate digital systems.</p>
+
+        <h4>I. What are Core Web Vitals?</h4>
+        <p>These metrics comprise a set of precise measurements established by search engines to evaluate the actual quality of user experience on the web, resting upon three core pillars:</p>
+        <ul>
+          <li><strong>Largest Contentful Paint (LCP):</strong> Measures the time required for the largest visual element (such as a primary hero image or core text block) to render within the viewport. The optimal benchmark is to load this element in under 2.5 seconds.</li>
+          <li><strong>Interaction to Next Paint (INP):</strong> Measures page responsiveness to user text interactions or clicks, ensuring the application remains entirely free of noticeable delays during navigation.</li>
+          <li><strong>Cumulative Layout Shift (CLS):</strong> Measures the visual stability of elements during the loading phase to prevent sudden "unexpected shifts" of texts or buttons, which frequently cause misclicks and a degraded user experience.</li>
+        </ul>
+
+        <h4>II. Why Speed and User Experience Have Become Critical Ranking Factors</h4>
+        <p>Modern search algorithms no longer rely solely on keyword matching; they have shifted toward an absolute focus on user satisfaction and behavioral patterns.</p>
+        <ul>
+          <li><strong>Lower Bounce Rates:</strong> Slow websites lose a substantial percentage of visitors within mere seconds before their content even finishes loading.</li>
+          <li><strong>The Mobile-First Shift:</strong> With smartphones dominating global web traffic, lightweight and meticulously engineered software structures are mandatory to guarantee seamless stability across diverse screen sizes.</li>
+          <li><strong>Smart Algorithms:</strong> Today's search engines explicitly favor platforms that achieve high Core Web Vitals scores, treating them as definitive proof of service quality and technical reliability.</li>
+        </ul>
+
+        <h4>III. Software Engineering Behind High Performance at ZeynVision</h4>
+        <p>Adhering to advanced performance benchmarks is never achieved by coincidence; it requires rigorous software engineering anchored in clear principles:</p>
+        <ul>
+          <li><strong>Extreme Minimalism:</strong> Eliminating redundant code, scripts, or unnecessary files to reduce data transfer volumes to the absolute minimum.</li>
+          <li><strong>Optimized Response Times:</strong> Architecting servers and data pipelines to ensure request processing occurs within fractions of a second.</li>
+          <li><strong>Responsive and Lightweight Design:</strong> Constructing interfaces that do not burden the user's browser, supporting smooth execution with maximum efficiency.</li>
+        </ul>
+
+        <h4>Conclusion</h4>
+        <p>At ZeynVision, we view Core Web Vitals not merely as technical rules to pass, but as an operational philosophy reflecting our absolute commitment to engineering excellence. Speed and a seamless user experience are two sides of the same digital professionalism coin—the ultimate differentiator between an ordinary digital platform and one that leads its sector with stability and mastery.</p>
+      </div>
+    </div>
+
+    <!-- Türkçe sürüm -->
+    <div class="article-lang" data-lang="tr" hidden>
+      <div class="article-body">
+        <p class="article-lead">Giriş</p>
+        <p>Modern dijital teknoloji dünyasında, web sitelerinin hızı artık sadece ek bir rekabet avantajı değil; platformların verimliliğini ve arama sonuçlarında zirvede kalma yeteneğini belirleyen temel bir mühendislik ölçütü haline gelmiştir. ZeynVision olarak, nitelikli yazılım geliştirmenin yalnızca arayüzlerin estetik çekiciliğiyle değil, altyapının hassasiyeti ve kullanıcıya anında yanıt vermesiyle ölçüldüğüne inanıyoruz. İşte Core Web Vitals (Temel Web Verileri), arama motorlarının ve kullanıcıların dijital sistemleri değerlendirme biçimindeki en önemli dönüşümü burada temsil etmektedir.</p>
+
+        <h4>I. Core Web Vitals Nedir?</h4>
+        <p>Bu göstergeler, arama motorlarının web üzerindeki kullanıcı deneyiminin gerçek kalitesini ölçmek için belirlediği ve üç temel sütuna dayanan hassas ölçüm setleridir:</p>
+        <ul>
+          <li><strong>En Büyük İçerikli Boyama (Largest Contentful Paint - LCP):</strong> Görünüm alanındaki en büyük görsel öğenin (ana kahraman görseli veya temel metin bloğu gibi) yüklenmesi için geçen süreyi ölçer. İdeal hedef, bu öğenin 2.5 saniyenin altında yüklenmesidir.</li>
+          <li><strong>Sonraki Boyamaya Etkileşim (Interaction to Next Paint - INP):</strong> Sayfanın kullanıcının metin etkileşimlerine veya tıklamalarına tepki verme hızını ölçer ve uygulamanın gezinme sırasında hiçbir belirgin gecikme içermemesini sağlar.</li>
+          <li><strong>Kümülatif Düzen Kayması (Cumulative Layout Shift - CLS):</strong> Metinlerin veya butonların "beklenmedik ani kaymalarını" önlemek için yükleme aşamasında öğelerin görsel kararlılığını ölçer; bu kaymalar sıklıkla yanlış tıklamalara ve bozulmuş bir kullanıcı deneyimine yol açar.</li>
+        </ul>
+
+        <h4>II. Hız ve Kullanıcı Deneyimi Neden Kritik Sıralama Faktörleri Haline Geldi?</h4>
+        <p>Modern arama algoritmaları artık yalnızca anahtar kelime eşleştirmesine dayanmamaktadır; bunun yerine kullanıcı memnuniyetine ve davranışsal kalıplara mutlak bir odaklanmaya kaymıştır.</p>
+        <ul>
+          <li><strong>Düşük Hemen Çıkma Oranları (Bounce Rate):</strong> Yavaş web siteleri, içerikleri yüklenmeden hemen önce ziyaretçilerinin hatırı sayılır bir yüzdesini saniyeler içinde kaybeder.</li>
+          <li><strong>Mobil Öncelikli Dönüşüm:</strong> Akıllı telefonların küresel web trafiğine hakim olmasıyla birlikte, hafif ve titizlikle tasarlanmış yazılım yapıları, farklı ekran boyutlarında sorunsuz kararlılığı garanti etmek için zorunludur.</li>
+          <li><strong>Akıllı Algoritmalar:</strong> Günümüz arama motorları, yüksek Core Web Vitals skorları elde eden platformları, hizmet kalitesinin ve teknik güvenilirliğin kesin kanıtı olarak değerlendirerek açıkça desteklemektedir.</li>
+        </ul>
+
+        <h4>III. ZeynVision'da Yüksek Performansın Arkasındaki Yazılım Mühendisliği</h4>
+        <p>Gelişmiş performans kriterlerine uymak asla tesadüfen elde edilmez; net prensiplere dayanan titiz bir yazılım mühendisliği gerektirir:</p>
+        <ul>
+          <li><strong>Aşırı Minimalizm (Extreme Minimalism):</strong> Veri aktarım hacimlerini mutlak minimuma indirmek için gereksiz kodları, komut dosyalarını veya fazladan dosyaları ortadan kaldırmak.</li>
+          <li><strong>Optimize Edilmiş Yanıt Süreleri:</strong> İstek işlemlerinin saniyenin kesirleri içinde gerçekleşmesini sağlamak için sunucuları ve veri hatlarını mimari olarak tasarlamak.</li>
+          <li><strong>Duyarlı ve Hafif Tasarım:</strong> Kullanıcının tarayıcısını yük altında bırakmayan, maksimum verimlilikle akıcı çalışmayı destekleyen arayüzler oluşturmak.</li>
+        </ul>
+
+        <h4>Sonuç</h4>
+        <p>ZeynVision olarak Core Web Vitals'ı geçilmesi gereken teknik kurallar olarak değil, mühendislik mükemmeliyetine olan mutlak bağlılığımızı yansıtan operasyonel bir felsefe olarak görüyoruz. Hız ve kusursuz kullanıcı deneyimi, dijital profesyonelliğin aynı madalyonun iki yüzüdür; sıradan bir dijital platform ile sektörüne istikrar ve ustalıkla liderlik eden bir platform arasındaki nihai farktır.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== نافذة المقال الكامل: البساطة المتطرفة ===== -->
+<div class="modal" id="article-modal-minimalism" role="dialog" aria-modal="true" aria-labelledby="article-title-minimalism">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card article-modal">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <span class="ins-cat" data-i18n="insights.c3">تصميم</span>
+    <h3 id="article-title-minimalism" data-i18n="insights.art.minimalism.title">البساطة المتطرفة في واجهات المستقبل: هندسة المساحات والخطوط الدقيقة في تجربة المستخدم</h3>
+    <p class="article-byline" data-i18n="insights.art.minimalism.by">بقلم: فريق التصميم والهندسة في ZeynVision</p>
+
+    <!-- النسخة العربية -->
+    <div class="article-lang" data-lang="ar">
+      <div class="article-body">
+        <p class="article-lead">مقدمة</p>
+        <p>في خضم الانفجار الرقمي وتزايد التعقيد البصري في التطبيقات والمنصات الحديثة، تبرز "البساطة المتطرفة" (Extreme Minimalism) كمعيار هندسي وثوري لإعادة صياغة العلاقة بين المستخدم والأنظمة الرقمية. في ZeynVision، نؤمن بأن التصميم الراقي لا يتمثل فيما نضيفه من زوائد، بل فيما نستبعده ليبقى الجوهر التقني وحده ناصعاً ومؤثراً. لقد تجاوز التصميم الحديث مفهوم الألوان الجذابة، ليصبح بنية معمارية متكاملة تعتمد على المساحات البيضاء الاستراتيجية والتخطيط الهندسي الدقيق، مع تجنب أي عناصر بصرية بشرية تشتت الانتباه عن الكفاءة الصارمة للأنظمة.</p>
+
+        <h4>أولاً: المساحات البيضاء كبنية تحتية بصرية</h4>
+        <p>المساحات الفارغة أو البيضاء ليست مجرد فراغات عبثية، بل هي عنصر استراتيجي أساسي يوجه حركة العين ويعزز التركيز البصري.</p>
+        <ul>
+          <li><strong>تقليل الحمل المعرفي (Cognitive Load):</strong> تمكين المستخدم من معالجة البيانات الحيوية ومؤشرات الأداء فوراً دون أي تشتيت ذهني.</li>
+          <li><strong>إبراز الهيكلية التقنية:</strong> السماح للعناصر الأساسية والودجت الحية بالظهور بوضوح تام، مما يعكس طابع المؤسسات النخبوية والأنظمة المتقدمة.</li>
+          <li><strong>خلق الإحساس بالاتساع:</strong> منح الواجهات عمقاً بصرياً يماثل هندسة العمارة الحديثة، حيث تحل الدقة والترتيب محل الحشو والتكدس.</li>
+        </ul>
+
+        <h4>ثانياً: دقة الخطوط الهندسية والمستويات الهيكلية</h4>
+        <p>يعتمد التصميم النخبوي للواجهات على صرامة الخطوط الهندسية وتلاقي المستويات وفق محاور دقيقة ومدروسة:</p>
+        <ul>
+          <li><strong>الخطوط الحادة والمنظمة:</strong> تمنح الواجهات طابعاً معمارياً متيناً يوحي بالاستقرار والثقة المطلقة في البرمجيات وتحتها.</li>
+          <li><strong>التوجيه البصري نحو النقاط المحورية:</strong> تصميم العناصر بحيث تتلاقى المستويات الهندسية نحو بؤر تركيز مضيئة تلتقط عين المستخدم وتوجهه نحو القرار أو التفاعل الأساسي بلا تردد.</li>
+          <li><strong>التناغم مع الكود البرمجي:</strong> البنية الهندسية البسيطة والمنظمة تترجم بسلاسة تامة إلى شيفرات برمجية خفيفة وعالية الأداء، مما يضمن استجابة فورية.</li>
+        </ul>
+
+        <h4>ثالثاً: الكفاءة الوظيفية ووهم السرعة وسلاسة التفاعل</h4>
+        <p>الواجهات التي تتبنى البساطة المتطرفة لا تبدو أنظف وأكثر أناقة فحسب، بل تقدم تفوقاً عملياً مباشراً:</p>
+        <ul>
+          <li><strong>تحسين الأداء التقني:</strong> تقليل العناصر الرسومية المعقدة يساهم بشكل مباشر في خفض أوقات التحميل وتحقيق أعلى درجات التوافق مع معايير الأداء.</li>
+          <li><strong>التجربة الموجهة بالبيانات:</strong> التركيز حصرياً على الأنظمة، الرسوم البيانية، وهندسة المعطيات، متجاوزين الزخارف التقليدية لصالح الوظائف الخالصة.</li>
+        </ul>
+
+        <h4>خاتمة</h4>
+        <p>في ZeynVision، ننظر إلى البساطة المتطرفة ليس كصيحة تصميم عابرة، بل كفلسفة هندسية متكاملة. إنها التوازن الأمثل بين دقة الخوارزميات ونقاء الشكل البصري، لتقديم تجربة مستخدم استثنائية تسبق عصرها وتحدد معايير المستقبل الرقمي بثبات واقتدار.</p>
+      </div>
+    </div>
+
+    <!-- English version -->
+    <div class="article-lang" data-lang="en" hidden>
+      <div class="article-body">
+        <p class="article-lead">Introduction</p>
+        <p>Amidst the digital explosion and growing visual clutter in modern applications and platforms, "Extreme Minimalism" emerges as a revolutionary engineering standard that reshapes the relationship between the user and digital systems. At ZeynVision, we believe that sophisticated design is not defined by what we add, but by what we strip away, leaving the technical core pure and impactful. Modern design has transcended attractive color palettes to become an integrated architectural structure relying on strategic white space and precise geometric layouts, completely avoiding any human imagery that distracts from the strict efficiency of our systems.</p>
+
+        <h4>I. White Space as Visual Infrastructure</h4>
+        <p>Blank or white space is not merely empty filler; it is a primary strategic element that guides eye movement and enhances visual focus.</p>
+        <ul>
+          <li><strong>Reducing Cognitive Load:</strong> Empowering users to process vital data and performance metrics instantly without mental distraction.</li>
+          <li><strong>Highlighting Technical Architecture:</strong> Allowing core elements and live widgets to appear with absolute clarity, reflecting the character of elite institutions and advanced systems.</li>
+          <li><strong>Creating Spatial Depth:</strong> Granting interfaces a visual depth akin to modern architecture, where precision and order replace crowding and clutter.</li>
+        </ul>
+
+        <h4>II. The Precision of Geometric Lines and Structural Planes</h4>
+        <p>Elite interface design relies on the rigor of geometric lines and the convergence of planes along precise, well-studied axes:</p>
+        <ul>
+          <li><strong>Sharp and Organized Lines:</strong> Giving interfaces a robust architectural character that conveys stability and absolute confidence in software and its underlying infrastructure.</li>
+          <li><strong>Visual Direction Toward Focal Points:</strong> Designing elements so that geometric planes converge toward luminous focus points that capture the user's eye and guide them toward core decisions or interactions without hesitation.</li>
+          <li><strong>Harmony with Source Code:</strong> Simple, organized structural architecture translates seamlessly into lightweight, high-performance code, ensuring instantaneous responsiveness.</li>
+        </ul>
+
+        <h4>III. Functional Efficiency, Speed, and Seamless Interaction</h4>
+        <p>Interfaces adopting extreme minimalism not only look cleaner and more elegant, but deliver direct, practical superiority:</p>
+        <ul>
+          <li><strong>Optimizing Technical Performance:</strong> Reducing complex graphic elements directly contributes to lower load times and achieves the highest compliance with performance benchmarks.</li>
+          <li><strong>Data-Driven Experience:</strong> Focusing exclusively on systems, charts, and data engineering, bypassing traditional ornamentation in favor of pure functionality.</li>
+        </ul>
+
+        <h4>Conclusion</h4>
+        <p>At ZeynVision, we view extreme minimalism not as a fleeting design trend, but as a comprehensive engineering philosophy. It is the optimal balance between algorithmic precision and visual purity, delivering an exceptional user experience that stays ahead of its time and steadily defines the standards of the digital future.</p>
+      </div>
+    </div>
+
+    <!-- Türkçe sürüm -->
+    <div class="article-lang" data-lang="tr" hidden>
+      <div class="article-body">
+        <p class="article-lead">Giriş</p>
+        <p>Modern uygulamalardaki ve platformlardaki dijital patlama ve artan görsel karmaşanın ortasında, "Aşırı Minimalizm" (Extreme Minimalism), kullanıcı ile dijital sistemler arasındaki ilişkiyi yeniden şekillendiren devrimci bir mühendislik standardı olarak öne çıkmaktadır. ZeynVision olarak, nitelikli tasarımın ne eklediğimizle değil, teknik çekirdeği saf ve etkili bırakmak için neyi çıkardığımızla tanımlandığına inanıyoruz. Modern tasarım, çekici renk paletlerinin ötesine geçerek, stratejik beyaz alana ve hassas geometrik yerleşime dayanan, sistemlerimizin katı verimliliğinden dikkat dağıtan her türlü insan görselinden tamamen kaçınan entegre bir mimari yapı haline gelmiştir.</p>
+
+        <h4>I. Görsel Altyapı Olarak Beyaz Alan</h4>
+        <p>Boş veya beyaz alan sadece boş bir dolgu maddesi değildir; göz hareketini yönlendiren ve odaklanmayı artıran birincil stratejik unsurdur.</p>
+        <ul>
+          <li><strong>Bilişsel Yükün Azaltılması:</strong> Kullanıcıların hayati verileri ve performans ölçütlerini zihinsel dikkat dağıtıcılar olmadan anında işlemesini sağlama.</li>
+          <li><strong>Teknik Mimariyi Vurgulama:</strong> Temel öğelerin ve canlı widget'ların mutlak netlikle görünmesini sağlayarak elit kurumların ve gelişmiş sistemlerin karakterini yansıtma.</li>
+          <li><strong>Mekansal Derinlik Yaratma:</strong> Hassasiyet ve düzenin kalabalık ve karmaşanın yerini aldığı modern mimariye benzer bir görsel derinliği arayüzlere kazandırma.</li>
+        </ul>
+
+        <h4>II. Geometrik Çizgilerin ve Yapısal Düzlemlerin Hassasiyeti</h4>
+        <p>Elit arayüz tasarımı, geometrik çizgilerin katılığına ve düzlemlerin hassas, iyi çalışılmış eksenler boyunca kesişmesine dayanır:</p>
+        <ul>
+          <li><strong>Keskin ve Düzenli Çizgiler:</strong> Arayüzlere, yazılıma ve altındaki altyapıya olan kararlılığı ve mutlak güveni ileten sağlam bir mimari karakter kazandırma.</li>
+          <li><strong>Odak Noktalarına Doğru Görsel Yönlendirme:</strong> Öğelerin, geometrik düzlemlerin kullanıcının gözünü yakalayan ve tereddüt etmeden temel kararlara veya etkileşimlere yönlendiren parlayan odak noktalarına doğru birleşeceği şekilde tasarlanması.</li>
+          <li><strong>Kaynak Kod ile Uyum:</strong> Basit ve organize yapısal mimari, hafif ve yüksek performanslı koda kusursuz bir şekilde dönüşerek anında yanıt verme yeteneğini garanti eder.</li>
+        </ul>
+
+        <h4>III. Fonksiyonel Verimlilik, Hız ve Akıcı Etkileşim</h4>
+        <p>Aşırı minimalizmi benimseyen arayüzler yalnızca daha temiz ve zarif görünmekle kalmaz, aynı zamanda doğrudan ve pratik bir üstünlük sunar:</p>
+        <ul>
+          <li><strong>Teknik Performansın Optimize Edilmesi:</strong> Karmaşık grafik öğelerinin azaltılması, doğrudan daha düşük yükleme sürelerine katkıda bulunur ve performans kriterlerine en yüksek uyumu sağlar.</li>
+          <li><strong>Veri Odaklı Deneyim:</strong> Geleneksel süslemeleri saf işlevsellik lehine atlayarak münhasıran sistemlere, grafiklere ve veri mühendisliğine odaklanma.</li>
+        </ul>
+
+        <h4>Sonuç</h4>
+        <p>ZeynVision olarak aşırı minimalizmi geçici bir tasarım akımı olarak değil, kapsamlı bir mühendislik felsefesi olarak görüyoruz. Algoritmik hassasiyet ile görsel saflık arasındaki optimal dengeyi sağlayarak, zamanının ilerisinde olan ve dijital geleceğin standartlarını istikrarla belirleyen olağanüstü bir kullanıcı deneyimi sunuyoruz.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== نافذة المقال الكامل: البيانات اللحظية ===== -->
+<div class="modal" id="article-modal-streaming" role="dialog" aria-modal="true" aria-labelledby="article-title-streaming">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card article-modal">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <span class="ins-cat" data-i18n="insights.c4">بيانات</span>
+    <h3 id="article-title-streaming" data-i18n="insights.art.streaming.title">البيانات اللحظية: هندسة البث الحديثة من Kafka إلى التحليل الفوري</h3>
+    <p class="article-byline" data-i18n="insights.art.streaming.by">بقلم: فريق الهندسة والتطوير في ZeynVision</p>
+
+    <!-- النسخة العربية -->
+    <div class="article-lang" data-lang="ar">
+      <div class="article-body">
+        <p class="article-lead">مقدمة</p>
+        <p>في عالم تتسارع فيه الأحداث وتتبدل المعطيات في أجزاء من الثانية، لم تعد نماذج المعالجة التقليدية (Batch Processing) كافية لتلبية متطلبات الأنظمة الرقمية المتقدمة. في ZeynVision، نؤمن بأن القيمة الحقيقية للبيانات تكمن في فوريتها؛ فالرؤية التي تصل متأخرة تفقد صلاحيتها الاستراتيجية. من هنا تأتي هندسة البث الحية (Real-time Streaming Engineering) لتشكل الشريان الأساسي الذي يربط بين تدفق الحدث الخام وتحليله واتخاذ القرار دون أي تأخير ملحوظ.</p>
+
+        <h4>أولاً: Apache Kafka كعمود فقري لتدفق الأحداث</h4>
+        <p>لا يمكن الحديث عن هندسة البث الحديثة دون الوقوف عند Apache Kafka، المنظومة المعمارية الأساسية لتنسيق ونقل الأحداث بكفاءة فائقة:</p>
+        <ul>
+          <li><strong>إدارة التدفق العالي (High Throughput):</strong> التعامل مع ملايين الرسائل والبيانات المتدفقة في الثانية الواحدة دون حدوث أي اختناق مروري في مسارات الشبكة.</li>
+          <li><strong>الموثوقية وقابلية التوسع (Fault Tolerance):</strong> توزيع البيانات عبر عقد متعددة (Clusters) لضمان استمرارية التشغيل المطلقة وعدم فقدان أي حدث مهما كانت ظروف الضغط التشغيلي.</li>
+          <li><strong>فصل الأنظمة (Decoupling):</strong> عزل مصادر البيانات عن وجهاتها النهائية، مما يتيح لتطبيقات متعددة استهلاك نفس تدفق البيانات بشكل متزامن ومستقل تماماً.</li>
+        </ul>
+
+        <h4>ثانياً: معالجة التدفقات الفورية (Stream Processing)</h4>
+        <p>نقل البيانات عبر الشبكة مجرد خطوة أولية؛ أما القيمة الحقيقية فتنشأ من معالجة هذه البيانات وهي في حالة حركة مستمرة:</p>
+        <ul>
+          <li><strong>التحليل اللحظي:</strong> استخدام أطر عمل متقدمة لتنقية، وتصفية، وتجميع الأحداث فور وقوعها وقبل وصولها إلى مستودعات التخزين النهائية.</li>
+          <li><strong>إدارة الحالة (State Management):</strong> تتبع العمليات السابقة والمركبة بذكاء لإصدار تنبيهات أو تنفيذ خوارزميات آلية بناءً على السياق الزمني الحالي.</li>
+          <li><strong>الكفاءة الحسابية:</strong> توجيه الموارد البرمجية لمعالجة الجداول الزمنية المتدفقة بأقل استهلاك ممكن للطاقة الحاسوبية.</li>
+        </ul>
+
+        <h4>ثالثاً: قواعد البيانات وعمليات التحليل الفائق</h4>
+        <p>لكي يكتمل النظام اللحظي، تتطلب البنية التحتية قواعد بيانات وتخزين قادرة على الاستجابة الفورية للبيانات الضخمة:</p>
+        <ul>
+          <li><strong>الاستعلامات دون تأخير:</strong> استخدام قواعد بيانات متخصصة في الذاكرة الحية (In-Memory) لتنفيذ عمليات البحث والتحليل المعقدة في أجزاء من الثانية.</li>
+          <li><strong>التكامل مع الواجهات الحية:</strong> ربط مخرجات البث المباشر بـ Widgets وودجت تفاعلية تظهر التغيرات والرسوم البيانية على الشاشة فور حدوثها دون الحاجة لتحديث الصفحة.</li>
+        </ul>
+
+        <h4>خاتمة</h4>
+        <p>في ZeynVision، ننظر إلى هندسة البث والتحليل اللحظي كمعيار حاسم للمؤسسات التي تسعى لهيمنة رقمية مطلقة. إن الانتقال من انتظار تحليل الماضي إلى استشراف اللحظة الراهنة واتخاذ القرار الفوري هو الفاصل الحقيقي بين الأنظمة التقليدية وتلك التي تقود المستقبل بثبات واقتدار.</p>
+      </div>
+    </div>
+
+    <!-- English version -->
+    <div class="article-lang" data-lang="en" hidden>
+      <div class="article-body">
+        <p class="article-lead">Introduction</p>
+        <p>In a world where events accelerate and data changes in fractions of a second, traditional batch processing models are no longer sufficient to meet the demands of advanced digital systems. At ZeynVision, we believe that true data value lies in its immediacy; insights that arrive late lose their strategic validity. This is where real-time streaming engineering forms the vital artery connecting raw event streams with analysis and decision-making without any noticeable delay.</p>
+
+        <h4>I. Apache Kafka as the Backbone of Event Streaming</h4>
+        <p>Modern streaming engineering cannot be discussed without highlighting Apache Kafka, the core architectural framework for coordinating and transferring events with exceptional efficiency:</p>
+        <ul>
+          <li><strong>High Throughput:</strong> Handling millions of messages and streaming data per second without network congestion or bottlenecks.</li>
+          <li><strong>Fault Tolerance:</strong> Distributing data across multiple clusters to ensure absolute operational continuity and zero data loss, regardless of operational stress levels.</li>
+          <li><strong>Decoupling:</strong> Isolating data sources from their final destinations, allowing multiple applications to consume the same data stream concurrently and completely independently.</li>
+        </ul>
+
+        <h4>II. Stream Processing</h4>
+        <p>Moving data across the network is merely an initial step; true value arises from processing this data while it is in a state of continuous motion:</p>
+        <ul>
+          <li><strong>Real-Time Analytics:</strong> Utilizing advanced frameworks to clean, filter, and aggregate events instantly as they occur and before they reach final storage repositories.</li>
+          <li><strong>State Management:</strong> Intelligently tracking past and composite operations to issue alerts or execute automated algorithms based on the current temporal context.</li>
+          <li><strong>Computational Efficiency:</strong> Directing software resources to process streaming timeframes with the absolute minimum consumption of computational power.</li>
+        </ul>
+
+        <h4>III. Databases and High-Performance Analytics Operations</h4>
+        <p>To complete the real-time system, the infrastructure requires database and storage systems capable of immediate responses to massive data volumes:</p>
+        <ul>
+          <li><strong>Zero-Delay Queries:</strong> Utilizing specialized in-memory databases to execute complex search and analysis operations in fractions of a second.</li>
+          <li><strong>Integration with Live Interfaces:</strong> Connecting live stream outputs to interactive widgets that display changes and charts on the screen immediately as they happen without requiring page reloads.</li>
+        </ul>
+
+        <h4>Conclusion</h4>
+        <p>At ZeynVision, we view streaming engineering and real-time analytics as a critical standard for organizations seeking absolute digital dominance. Shifting from waiting to analyze the past to anticipating the present moment and making immediate decisions is the true dividing line between traditional systems and those that lead the future with stability and mastery.</p>
+      </div>
+    </div>
+
+    <!-- Türkçe sürüm -->
+    <div class="article-lang" data-lang="tr" hidden>
+      <div class="article-body">
+        <p class="article-lead">Giriş</p>
+        <p>Olayların hızla geliştiği ve verilerin saniyenin kesirleri içinde değiştiği bir dünyada, geleneksel toplu işleme (batch processing) modelleri, gelişmiş dijital sistemlerin taleplerini karşılamaya artık yetmemektedir. ZeynVision olarak, verinin gerçek değerinin aniliğinde yattığına inanıyoruz; geç ulaşan içgörüler stratejik geçerliliğini yitirir. İşte tam bu noktada gerçek zamanlı akış mühendisliği, ham olay akışlarını analiz ve karar alma süreçleriyle hiçbir belirgin gecikme olmaksızın birbirine bağlayan hayati arteri oluşturur.</p>
+
+        <h4>I. Olay Akışının Omurgası Olarak Apache Kafka</h4>
+        <p>Modern akış mühendisliği, olayları olağanüstü bir verimlilikle koordine etmek ve aktarmak için temel mimari çerçeve olan Apache Kafka'ya değinilmeden ele alınamaz:</p>
+        <ul>
+          <li><strong>Yüksek Verim (High Throughput):</strong> Ağ tıkanıklığı veya dar boğazlar yaşamadan saniyede milyonlarca mesajı ve akış verisini işleme.</li>
+          <li><strong>Hata Toleransı (Fault Tolerance):</strong> Operasyonel stres seviyeleri ne olursa olsun, mutlak operasyonel sürekliliği ve sıfır veri kaybını garanti etmek için verileri birden çok küme (cluster) arasında dağıtma.</li>
+          <li><strong>Ayrıştırma (Decoupling):</strong> Veri kaynaklarını nihai hedeflerinden izole ederek, birden fazla uygulamanın aynı veri akışını aynı anda ve tamamen bağımsız bir şekilde tüketmesine olanak tanıma.</li>
+        </ul>
+
+        <h4>II. Akış İşleme (Stream Processing)</h4>
+        <p>Verileri ağ üzerinden taşımak yalnızca ilk adımdır; gerçek değer, bu veriler sürekli bir hareket halindeyken işlenmesinden doğar:</p>
+        <ul>
+          <li><strong>Gerçek Zamanlı Analitik:</strong> Olayları gerçekleştikleri anda ve nihai depolama havuzlarına ulaşmadan önce anında temizlemek, filtrelemek ve toplamak için gelişmiş çerçeveler kullanma.</li>
+          <li><strong>Durum Yönetimi (State Management):</strong> Geçmiş ve birleşik işlemleri akıllıca takip ederek mevcut zamansal bağlama dayalı uyarılar yayınlama veya otomatik algoritmalar çalıştırma.</li>
+          <li><strong>Hesaplama Verimliliği:</strong> Yazılım kaynaklarını, akış zaman dilimlerini olabilecek en düşük hesaplama gücü tüketimiyle işleyecek şekilde yönlendirme.</li>
+        </ul>
+
+        <h4>III. Veritabanları ve Yüksek Performanslı Analitik Operasyonları</h4>
+        <p>Gerçek zamanlı sistemi tamamlamak için altyapının, devasa veri hacimlerine anında yanıt verebilecek veritabanı ve depolama sistemlerine ihtiyacı vardır:</p>
+        <ul>
+          <li><strong>Gecikmesiz Sorgular (Zero-Delay Queries):</strong> Karmaşık arama ve analiz işlemlerini saniyenin kesirleri içinde yürütmek için özel bellek içi (in-memory) veritabanları kullanma.</li>
+          <li><strong>Canlı Arayüzlerle Entegrasyon:</strong> Canlı akış çıktılarını, değişiklikleri ve grafikleri sayfa yenilemeye gerek kalmadan gerçekleşir gerçekleşmez ekranda gösteren etkileşimli widget'lara bağlama.</li>
+        </ul>
+
+        <h4>Sonuç</h4>
+        <p>ZeynVision olarak akış mühendisliğini ve gerçek zamanlı analitiği, mutlak dijital hakimiyet arayan kuruluşlar için kritik bir standart olarak görüyoruz. Geçmişi analiz etmeyi beklemekten, anı öngörmeye ve derhal karar almaya geçiş; geleneksel sistemler ile geleceğe istikrar ve ustalıkla liderlik edenler arasındaki gerçek ayrım çizgisidir.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== نافذة المقال الكامل: أمان التطبيقات ===== -->
+<div class="modal" id="article-modal-security" role="dialog" aria-modal="true" aria-labelledby="article-title-security">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card article-modal">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <span class="ins-cat" data-i18n="insights.c5">أمن</span>
+    <h3 id="article-title-security" data-i18n="insights.art.security.title">أمان التطبيقات الحديثة: طبقات لا جدران — منهجية الدفاع المتعدد الطبقات لحماية منتجاتك الرقمية</h3>
+    <p class="article-byline" data-i18n="insights.art.security.by">بقلم: فريق الهندسة والتطوير في ZeynVision</p>
+
+    <!-- النسخة العربية -->
+    <div class="article-lang" data-lang="ar">
+      <div class="article-body">
+        <p class="article-lead">مقدمة</p>
+        <p>في مشهد التهديدات السيبرانية المتسارع، سقطت المفاهيم التقليدية للأمن الرقمي القائمة على فكرة "القلعة والخنادق"، حيث كان الاعتماد ينصب كلياً على جدار حماية خارجي واحد (Firewall) لحماية البنية التحتية. في ZeynVision، نؤمن بأن حماية المنصات الرقمية المتقدمة لا تحققها الجدران الصلبة التي إذا اخترقت سقط النظام بأكمله، بل تفرضها منهجية الدفاع المتعدد الطبقات (Defense-in-Depth). هذه الفلسفة الهندسية تقوم على تشديد حواجز أمنية متتالية ومتداولة، بحيث يضمن فشل طبقة واحدة عدم وصول المخترق إلى جوهر النظام وبيانات العملاء.</p>
+
+        <h4>أولاً: تأمين طبقة الشبكة وحركة المرور (Network &amp; Transport Layer)</h4>
+        <p>الدفاع يبدأ من النقطة الأولى التي يلامس فيها طلب المستخدم خوادم النظام:</p>
+        <ul>
+          <li><strong>التشفير الشامل (End-to-End Encryption):</strong> فرض بروتوكولات التشفير الحديثة (TLS 1.3) لضمان استحالة اعتراض البيانات أو التنصت عليها أثناء عبورها عبر الشبكات العامة.</li>
+          <li><strong>إدارة بوابات الوصول المتقدمة:</strong> استخدام أنظمة كشف ومنع التسلل (IDS/IPS) لرصد الأنماط المشبوهة وحظرها آلياً قبل بلوغها طبقة المعالجة.</li>
+        </ul>
+
+        <h4>ثانياً: أمان التطبيق والتحقق من الهوية (Application &amp; Identity Layer)</h4>
+        <p>الطبقة الثانية تركز على سلامة الشيفرات البرمجية والتحقق الصارم من هويات المستخدمين والأنظمة:</p>
+        <ul>
+          <li><strong>المصادقة الثنائية والموحدة:</strong> تطبيق آليات تحقق صارمة وصلاحيات دقيقة (Zero Trust Architecture) تمنح كل مستخدم أو خدمة الحد الأدنى فقط من الصلاحيات المطلوبة لأداء مهامها.</li>
+          <li><strong>الفحص البرمجي المستمر:</strong> دمج أدوات الحماية في دورة تطوير البرمجيات (DevSecOps) لاكتشاف الثغرات البرمجية ومعالجتها مسبقاً قبل نشر التحديثات إلى بيئة الإنتاج الحية.</li>
+        </ul>
+
+        <h4>ثالثاً: حماية البيانات وتشفير المستودعات (Data &amp; Storage Security)</h4>
+        <p>حتى في حال تجاوز المخترق للطبقات السابقة، تظل البيانات العارية حصناً منيعاً بفضل تقنيات التشفير المتقدمة:</p>
+        <ul>
+          <li><strong>تشفير البيانات في حالة السكون (Encryption at Rest):</strong> حفظ قواعد البيانات والملفات بصيغ مشفرة بالكامل باستخدام مفاتيح معمارية معقدة.</li>
+          <li><strong>العزل والتجزئة (Data Segregation):</strong> فصل البيانات الحساسة ومعلومات التشغيل في قطاعات معزولة تماماً لمنع أي تسرب جانبي محتمل.</li>
+        </ul>
+
+        <h4>رابعاً: المراقبة المستمرة والاستجابة الفورية (Observability &amp; Incident Response)</h4>
+        <p>الأمان ليس حالة ثابتة، بل هو عملية رصد واستجابة لا تتوقف:</p>
+        <ul>
+          <li><strong>التحليلات الأمنية اللحظية:</strong> ربط سجلات الأحداث (Logs) بأنظمة مراقبة ذكية تكشف أي سلوك شاذ أو محاولة اختراق في أجزاء من الثانية.</li>
+          <li><strong>خطط التعافي السريع:</strong> بناء بروتوكولات استجابة آلية تعزل المكونات المتأثرة فوراً لضمان استمرارية الأعمال وحماية المنظومة بالكامل.</li>
+        </ul>
+
+        <h4>خاتمة</h4>
+        <p>في ZeynVision، ننظر إلى الأمان السيبراني كجزء لا يتجزأ من جودة الهندسة البرمجية. إن تبني منهجية الدفاع متعدد الطبقات يمنح منتجاتنا الرقمية صلابة استثنائية، محولاً الأنظمة من قلاع هشّة تحيطها الأسوار إلى منظومات ذكية ومتينة تتشابك فيها الطبقات لحماية الاستقرار والموثوقية في وجه أي تحدٍ تقني.</p>
+      </div>
+    </div>
+
+    <!-- English version -->
+    <div class="article-lang" data-lang="en" hidden>
+      <div class="article-body">
+        <p class="article-lead">Introduction</p>
+        <p>In the fast-paced cybersecurity threat landscape, traditional concepts of digital security based on the "castle-and-moat" model—relying entirely on a single external firewall to protect the infrastructure—have collapsed. At ZeynVision, we believe that protecting advanced digital platforms is not achieved by rigid walls that, once breached, cause the entire system to fall. Instead, it requires a Defense-in-Depth methodology. This engineering philosophy is built on constructing successive, intertwined security barriers, ensuring that the failure of a single layer prevents an intruder from ever reaching the core of the system and customer data.</p>
+
+        <h4>I. Network and Transport Layer Security</h4>
+        <p>Defense begins at the exact point where a user's request first touches the system's servers:</p>
+        <ul>
+          <li><strong>End-to-End Encryption:</strong> Enforcing modern encryption protocols (TLS 1.3) to guarantee that data cannot be intercepted or monitored while traversing public networks.</li>
+          <li><strong>Advanced Access Gateways:</strong> Deploying Intrusion Detection and Prevention Systems (IDS/IPS) to monitor suspicious patterns and block them automatically before they reach the processing layer.</li>
+        </ul>
+
+        <h4>II. Application and Identity Layer</h4>
+        <p>The second layer focuses on code integrity and rigorous verification of user and system identities:</p>
+        <ul>
+          <li><strong>Multi-Factor and Unified Authentication:</strong> Implementing strict verification mechanisms and granular permissions (Zero Trust Architecture) that grant every user or service only the minimum required privileges to perform its tasks.</li>
+          <li><strong>Continuous Code Scanning:</strong> Integrating security tools into the software development lifecycle (DevSecOps) to discover vulnerabilities and remediate them proactively prior to deploying updates to live production environments.</li>
+        </ul>
+
+        <h4>III. Data and Storage Security</h4>
+        <p>Even if an intruder breaches the previous layers, raw data remains an impenetrable fortress thanks to advanced encryption technologies:</p>
+        <ul>
+          <li><strong>Encryption at Rest:</strong> Storing databases and files in fully encrypted formats using complex architectural keys.</li>
+          <li><strong>Data Segregation:</strong> Isolating sensitive data and operational information into completely segregated sectors to prevent any potential lateral movement or leaks.</li>
+        </ul>
+
+        <h4>IV. Continuous Monitoring and Incident Response</h4>
+        <p>Security is never a static state; it is a continuous process of observation and response:</p>
+        <ul>
+          <li><strong>Real-Time Security Analytics:</strong> Connecting event logs to smart monitoring systems that detect any anomalous behavior or intrusion attempts within fractions of a second.</li>
+          <li><strong>Rapid Recovery Plans:</strong> Building automated response protocols that immediately isolate affected components to ensure business continuity and protect the entire ecosystem.</li>
+        </ul>
+
+        <h4>Conclusion</h4>
+        <p>At ZeynVision, we view cybersecurity as an inseparable component of software engineering quality. Adopting a defense-in-depth methodology grants our digital products exceptional robustness, transforming systems from fragile castles surrounded by walls into smart, resilient ecosystems where layers intertwine to safeguard stability and reliability against any technical challenge.</p>
+      </div>
+    </div>
+
+    <!-- Türkçe sürüm -->
+    <div class="article-lang" data-lang="tr" hidden>
+      <div class="article-body">
+        <p class="article-lead">Giriş</p>
+        <p>Hızla gelişen siber güvenlik tehditleri ortamında, altyapıyı korumak için tamamen tek bir harici güvenlik duvarına (firewall) dayanan geleneksel "kale ve hendek" dijital güvenlik modelleri çökmüştür. ZeynVision olarak, gelişmiş dijital platformları korumanın, ihlal edildiğinde tüm sistemin çökmesine neden olan sert duvarlarla değil, Derinlemesine Savunma (Defense-in-Depth) metodolojisiyle sağlanacağına inanıyoruz. Bu mühendislik felsefesi, tek bir katmanın başarısızlığının bir saldırganın asla sistemin çekirdeğine ve müşteri verilerine ulaşmamasını garanti edecek şekilde ardışık ve birbirine bağlı güvenlik bariyerleri inşa etmeye dayanır.</p>
+
+        <h4>I. Ağ ve Taşıma Katmanı Güvenliği</h4>
+        <p>Savunma, bir kullanıcının isteğinin sistemin sunucularına ilk dokunduğu noktada başlar:</p>
+        <ul>
+          <li><strong>Uçtan Uca Şifreleme (End-to-End Encryption):</strong> Verilerin halka açık ağlarda seyahat ederken ele geçirilmesini veya dinlenmesini engellemek için modern şifreleme protokollerinin (TLS 1.3) zorunlu kılınması.</li>
+          <li><strong>Gelişmiş Erişim Ağ Geçitleri:</strong> Şüpheli kalıpları izlemek ve işleme katmanına ulaşmadan önce otomatik olarak engellemek için Saldırı Tespit ve Önleme Sistemlerinin (IDS/IPS) konuşlandırılması.</li>
+        </ul>
+
+        <h4>II. Uygulama ve Kimlik Katmanı</h4>
+        <p>İkinci katman, kod bütünlüğüne ve kullanıcı ile sistem kimliklerinin titizlikle doğrulanmasına odaklanır:</p>
+        <ul>
+          <li><strong>Çok Faktörlü ve Birleşik Kimlik Doğrulama:</strong> Her kullanıcıya veya servise yalnızca görevlerini gerçekleştirmek için gereken minimum yetkileri veren katı doğrulama mekanizmaları ve ayrıcalıklı erişim ilkelerinin (Sıfır Güven Mimarisi - Zero Trust Architecture) uygulanması.</li>
+          <li><strong>Sürekli Kod Taraması:</strong> Güncellemeleri canlı üretim ortamlarına dağıtmadan önce güvenlik açıkları tespit etmek ve proaktif olarak gidermek için yazılım geliştirme yaşam döngüsüne (DevSecOps) güvenlik araçlarının entegre edilmesi.</li>
+        </ul>
+
+        <h4>III. Veri ve Depolama Güvenliği</h4>
+        <p>Bir saldırgan önceki katmanları aşsa bile, ham veriler gelişmiş şifreleme teknolojileri sayesinde aşılmaz bir kale olarak kalmaya devam eder:</p>
+        <ul>
+          <li><strong>Bekleme Halinde Şifreleme (Encryption at Rest):</strong> Veritabanlarının ve dosyaların karmaşık mimari anahtarlar kullanılarak tamamen şifrelenmiş formatlarda depolanması.</li>
+          <li><strong>Veri Bölümleme ve İzolasyon (Data Segregation):</strong> Olası yan hareketleri veya sızıntıları önlemek için hassas verileri ve operasyonel bilgileri tamamen izole edilmiş sektörlere ayırma.</li>
+        </ul>
+
+        <h4>IV. Sürekli İzleme ve Olay Müdahalesi</h4>
+        <p>Güvenlik asla statik bir durum değildir; sürekli bir gözlem ve müdahale sürecidir:</p>
+        <ul>
+          <li><strong>Gerçek Zamanlı Güvenlik Analitiği:</strong> Olay günlüklerini (Logs), herhangi bir anormal davranışı veya sızma girişimini saniyenin kesirleri içinde tespit eden akıllı izleme sistemlerine bağlama.</li>
+          <li><strong>Hızlı Kurtarma Planları:</strong> İş sürekliliğini garanti etmek ve tüm ekosistemi korumak için etkilenen bileşenleri derhal izole eden otomatik müdahale protokolleri oluşturma.</li>
+        </ul>
+
+        <h4>Sonuç</h4>
+        <p>ZeynVision olarak siber güvenliği, yazılım mühendisliği kalitesinin ayrılmaz bir bileşeni olarak görüyoruz. Derinlemesine savunma metodolojisini benimsemek, dijital ürünlerimize olağanüstü bir dayanıklılık kazandırarak sistemleri duvarlarla çevrili kırılgan kalelerden, her türlü teknik meydan okumaya karşı istikrarı ve güvenilirliği korumak için katmanların iç içe geçtiği akıllı, dirençli ekosistemlere dönüştürmektedir.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== نافذة المقال الكامل: التحول الرقمي ===== -->
+<div class="modal" id="article-modal-transformation" role="dialog" aria-modal="true" aria-labelledby="article-title-transformation">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card article-modal">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <span class="ins-cat" data-i18n="insights.c6">استراتيجية</span>
+    <h3 id="article-title-transformation" data-i18n="insights.art.transformation.title">التحول الرقمي ليس مشروعاً تقنياً: لماذا تفشل 70% من البرامج وكيف نبني استراتيجية تصمد؟</h3>
+    <p class="article-byline" data-i18n="insights.art.transformation.by">بقلم: إدارة وتطوير ZeynVision</p>
+
+    <!-- النسخة العربية -->
+    <div class="article-lang" data-lang="ar">
+      <div class="article-body">
+        <p class="article-lead">مقدمة</p>
+        <p>تشير الإحصاءات العالمية في عالم الأعمال إلى حقيقة مقلقة: ما يقارب 70% من مبادرات التحول الرقمي تفشل في تحقيق أهدافها المرسومة، وغالباً ما تنتهي بتبديد الموارد الهائلة دون إحداث التغيير المنشود. في ZeynVision، نرى أن الجذر الأساسي لهذا الفشل يكمن في خطيئة مفاهيمية كبرى؛ وهي التعامل مع التحول الرقمي باعتباره "مشروعاً تقنياً" يُعهد به إلى قسم تكنولوجيا المعلومات وحده. الحقيقة المطلقة هي أن التحول الرقمي هو إعادة هندسة شاملة لثقافة المؤسسة، وعملياتها التشغيلية، ونماذج أعمالها، حيث تكون التكنولوجيا مجرد أداة لتنفيذ الرؤية لا أكثر.</p>
+
+        <h4>أولاً: لماذا تفشل 70% من مبادرات التحول الرقمي؟</h4>
+        <p>إن استنزاف الميزانيات وفشل الأنظمة الرقمية الجديدة لا يحدث صدفة، بل يعود إلى أسباب بنيوية متكررة:</p>
+        <ul>
+          <li><strong>وهم الترقية التكنولوجية (The Technology Trap):</strong> الاعتقاد بأن شراء أحدث البرمجيات أو الانتقال إلى السحابة يعني بالضرورة حدوث تحول رقمي، متجاهلين أن أتمتة العمليات الفاسدة لا تنتج سوى فشل أسرع وأوسع نطاقاً.</li>
+          <li><strong>المقاومة الثقافية والهيكلية:</strong> اصطدام الأدوات الرقمية الحديثة بعقلية إدارية تقليدية ترفض التغيير، مما يخلق فجوة عميقة بين استراتيجية الإدارة العليا والتنفيذ اليومي على الأرض.</li>
+          <li><strong>غياب المعمارية الموحدة (Siloed Systems):</strong> بناء حلول تقنية مجزأة غير متوافقة مع بعضها البعض، مما ينتج عنه جزر معزولة من البيانات ويمنع اتخاذ القرارات بناءً على رؤية شاملة للمؤسسة.</li>
+        </ul>
+
+        <h4>ثانياً: ركائز بناء استراتيجية رقمية تصمد وتستمر</h4>
+        <p>لبناء منظومة رقمية مرنة قادرة على مواجهة تقلبات الأسواق والمنافسة، يجب إعادة هندسة الاستراتيجية وفق ركائز هندسية صارمة:</p>
+        <ul>
+          <li><strong>1. إعادة الهندسة قبل الأتمتة (Process Re-engineering):</strong> قبل كتابة أي سطر برمجي أو اختيار أي نظام، يجب تفكيك العمليات الحالية وتبسيطها. في فلسفة ZeynVision، نؤمن بأن الحد الأدنى من التعقيد هو المعيار الحقيقي للكفاءة؛ فكلما كانت العمليات منسابة وأقل تعقيداً، كان نجاح التحول أسرع وأكثر استدامة.</li>
+          <li><strong>2. محورية البيانات واتخاذ القرار اللحظي (Data-Driven Core):</strong> التحول الحقيقي يغير طريقة اتخاذ القرارات من الحدس والتخمين إلى التحليل المباشر للبيانات. يتطلب ذلك بناء بنية تحتية متكاملة تضمن تدفق المعلومات بدقة وشفافية عبر كافة أقسام المؤسسة دون تأخير.</li>
+          <li><strong>3. ثقافة المرونة والتعلم المستمر (Agile Culture):</strong> التكنولوجيا تتطور بأجزاء من الثانية، والمؤسسات الثابتة محكومة بالزوال. يجب غرس ثقافة المرونة التنظيمية التي تتقبل التغيير السريع، وتعتبر الأخطاء بيانات تحليلية للتحسين وليست إخفاقات نهائية.</li>
+        </ul>
+
+        <h4>ثالثاً: خارطة طريق ZeynVision للتحول المستدام</h4>
+        <p>نعتمد في منهجيتنا الاستشارية والتنفيذية على أطر عمل تضمن تحقيق أقصى عائد استثماري وتقليل المخاطر التشغيلية:</p>
+        <ul>
+          <li><strong>التشخيص الجذري:</strong> تقييم الجاهزية الثقافية والتقنية للمؤسسة بدلاً من الاكتفاء بفحص البرمجيات.</li>
+          <li><strong>التصميم المعماري المتكامل:</strong> وضع مخططات هندسية تدمج الأمان (Security-first)، والأداء العالي، وقابلية التوسع المستقبلي.</li>
+          <li><strong>التنفيذ المرحلي (Iterative Deployment):</strong> إطلاق الأنظمة على شكل مراحل مترابطة تتيح اختبار الكفاءة والقبول تدريجياً لضمان استمرارية الأعمال دون انقطاع.</li>
+        </ul>
+
+        <h4>خاتمة</h4>
+        <p>في ZeynVision، نؤمن بأن التحول الرقمي ليس محطة وصول نهائية، بل هو حالة مستمرة من التطور والتكيف. إن الشركات التي تدرك أن التغيير يبدأ من الإنسان والفلسفة التشغيلية قبل الكود البرمجي هي وحدها التي تملك القدرة على الهيمنة الرقمية ورسم ملامح المستقبل.</p>
+      </div>
+    </div>
+
+    <!-- English version -->
+    <div class="article-lang" data-lang="en" hidden>
+      <div class="article-body">
+        <p class="article-lead">Introduction</p>
+        <p>Global business statistics reveal a sobering reality: approximately 70% of digital transformation initiatives fail to achieve their intended goals, frequently ending in wasted resources without producing the desired paradigm shift. At ZeynVision, we believe that the root cause of this failure lies in a fundamental conceptual flaw—treating digital transformation as a "technical project" delegated solely to the IT department. The absolute truth is that digital transformation is a comprehensive re-engineering of organizational culture, operational processes, and business models, where technology serves merely as an instrument to execute the vision, nothing more.</p>
+
+        <h4>I. Why Do 70% of Digital Transformation Initiatives Fail?</h4>
+        <p>The exhaustion of budgets and failure of new digital systems do not happen by chance; they stem from recurring structural flaws:</p>
+        <ul>
+          <li><strong>The Technology Trap:</strong> The belief that purchasing the latest software or migrating to the cloud inherently constitutes digital transformation, ignoring the reality that automating flawed processes only accelerates failure on a broader scale.</li>
+          <li><strong>Cultural and Structural Resistance:</strong> The collision of modern digital tools with a traditional managerial mindset that rejects change, creating a deep chasm between upper management strategy and daily execution on the ground.</li>
+          <li><strong>Siloed Systems (Lack of Unified Architecture):</strong> Building fragmented technical solutions that fail to interoperate, resulting in isolated data islands and preventing enterprise-wide, data-driven decision-making.</li>
+        </ul>
+
+        <h4>II. Pillars of a Resilient Digital Strategy</h4>
+        <p>To build a flexible digital ecosystem capable of withstanding market volatility and competition, strategies must be re-engineered according to rigorous engineering principles:</p>
+        <ul>
+          <li><strong>1. Process Re-engineering Before Automation:</strong> Before writing a single line of code or selecting any software, current processes must be deconstructed and simplified. In ZeynVision's philosophy, the reduction of complexity is the true benchmark of efficiency; the more streamlined and simplified operations are, the faster and more sustainable the transformation's success.</li>
+          <li><strong>2. A Data-Driven Core &amp; Real-Time Analytics:</strong> True transformation shifts decision-making methodologies from intuition and guesswork to direct data analysis. This requires building an integrated infrastructure that guarantees the accurate and transparent flow of information across all organizational departments without delay.</li>
+          <li><strong>3. Agile Culture &amp; Continuous Learning:</strong> Technology evolves in fractions of a second, and static organizations are doomed to obsolescence. An organizational culture of agility must be embedded—one that embraces rapid change and treats errors as analytical data for optimization rather than final defeats.</li>
+        </ul>
+
+        <h4>III. ZeynVision's Roadmap for Sustainable Transformation</h4>
+        <p>Our consulting and execution methodology relies on frameworks that maximize return on investment while minimizing operational risks:</p>
+        <ul>
+          <li><strong>Root Diagnosis:</strong> Evaluating the organization's cultural and technical readiness rather than merely auditing software.</li>
+          <li><strong>Integrated Architectural Design:</strong> Developing engineering blueprints that incorporate security-first principles, high performance, and future scalability.</li>
+          <li><strong>Iterative Deployment:</strong> Launching systems in interconnected phases that allow gradual testing of efficiency and acceptance to ensure uninterrupted business continuity.</li>
+        </ul>
+
+        <h4>Conclusion</h4>
+        <p>At ZeynVision, we believe that digital transformation is not a final destination, but a continuous state of evolution and adaptation. Enterprises that recognize change begins with human and operational philosophy before software code are the only ones equipped to claim digital dominance and shape the contours of the future.</p>
+      </div>
+    </div>
+
+    <!-- Türkçe sürüm -->
+    <div class="article-lang" data-lang="tr" hidden>
+      <div class="article-body">
+        <p class="article-lead">Giriş</p>
+        <p>Küresel iş dünyası istatistikleri düşündürücü bir gerçeği ortaya koyuyor: Dijital dönüşüm girişimlerinin yaklaşık %70'i hedeflerine ulaşmakta başarısız oluyor ve genellikle istenilen paradigma değişimini yaratamadan devasa kaynakların israfıyla sonuçlanıyor. ZeynVision olarak biz, bu başarısızlığın kök nedeninin temel bir kavramsal kusurda yattığına inanıyoruz; o da dijital dönüşümü yalnızca BT departmanına devredilen "teknolojik bir proje" olarak ele almaktır. Mutlak gerçek şudur ki dijital dönüşüm; teknolojinin sadece vizyonu hayata geçirmek için bir araç olduğu, kurumsal kültürün, operasyonel süreçlerin ve iş modellerinin kapsamlı bir şekilde yeniden mühendisliğidir.</p>
+
+        <h4>I. Dijital Dönüşüm Girişimlerinin %70'i Neden Başarısız Olur?</h4>
+        <p>Bütçelerin tükenmesi ve yeni dijital sistemlerin çökmesi tesadüfen gerçekleşmez; sürekli tekrarlanan yapısal kusurlardan kaynaklanır:</p>
+        <ul>
+          <li><strong>Teknoloji Tuzağı (The Technology Trap):</strong> En son yazılımı satın almanın veya buluta taşınmanın doğal olarak dijital dönüşüm teşkil ettiği inancı; hatalı süreçleri otomatikleştirmenin sadece daha geniş ölçekte başarısızlığı hızlandırdığı gerçeğini göz ardı eder.</li>
+          <li><strong>Kültürel ve Yapısal Direnç:</strong> Modern dijital araçların değişimi reddeden geleneksel bir yönetsel zihniyetle çarpışması; üst yönetim stratejisi ile sahadaki günlük uygulama arasında derin bir uçurum yaratır.</li>
+          <li><strong>Silo Sistemler (Birleştirilmemiş Mimari):</strong> Birbiriyle uyum sağlayamayan, izole veri adaları yaratan ve işletme genelinde veriye dayalı karar almayı engelleyen parçalanmış teknik çözümler inşa etmek.</li>
+        </ul>
+
+        <h4>II. Dayanıklı Bir Dijital Stratejinin Sütunları</h4>
+        <p>Piyasa dalgalanmalarına ve rekabete dayanabilecek esnek bir dijital ekosistem kurmak için stratejiler, katı mühendislik ilkelerine göre yeniden tasarlanmalıdır:</p>
+        <ul>
+          <li><strong>1. Otomasyondan Önce Süreç Yeniden Mühendisliği (Process Re-engineering):</strong> Tek bir satır kod yazmadan veya herhangi bir yazılım seçmeden önce mevcut süreçler sökülmeli ve basitleştirilmelidir. ZeynVision felsefesinde karmaşıklığın azaltılması, verimliliğin gerçek ölçütüdür; operasyonlar ne kadar akıcı ve sade olursa, dönüşümün başarısı o kadar hızlı ve sürdürülebilir olur.</li>
+          <li><strong>2. Veri Odaklı Çekirdek ve Gerçek Zamanlı Analitik (Data-Driven Core):</strong> Gerçek dönüşüm, karar alma metodolojilerini sezgi ve tahminlerden doğrudan veri analizine kaydırır. Bu, tüm kurumsal departmanlar arasında bilgi akışının gecikmeden, doğru ve şeffaf bir şekilde gerçekleşmesini garanti eden entegre bir altyapının kurulmasını gerektirir.</li>
+          <li><strong>3. Çevik Kültür ve Sürekli Öğrenme (Agile Culture):</strong> Teknoloji saniyenin kesirleri içinde gelişir ve durağan organizasyonlar kaçınılmaz olarak eskimeye mahkumdur. Hızlı değişimi benimseyen ve hataları nihai bir yenilgi olarak değil optimizasyon için analitik veri olarak ele alan organizasyonel bir çeviklik kültürü yerleştirilmelidir.</li>
+        </ul>
+
+        <h4>III. Sürdürülebilir Dönüşüm İçin ZeynVision Yol Haritası</h4>
+        <p>Danışmanlık ve uygulama metodolojimiz, operasyonel riskleri en aza indirirken yatırım getirisini maksimize eden çerçevelere dayanır:</p>
+        <ul>
+          <li><strong>Kök Teşhis (Root Diagnosis):</strong> Yazılımları sadece denetlemek yerine organizasyonun kültürel ve teknik hazırlığını değerlendirmek.</li>
+          <li><strong>Entegre Mimari Tasarım (Integrated Architectural Design):</strong> Güvenlik öncelikli (security-first) ilkeleri, yüksek performansı ve gelecekteki ölçeklenebilirliği içeren mühendislik planları geliştirmek.</li>
+          <li><strong>Yinelemeli Dağıtım (Iterative Deployment):</strong> Kesintisiz iş sürekliliğini garanti etmek için verimliliğin ve kabulün kademeli olarak test edilmesine olanak tanıyan, birbirine bağlı aşamalar halinde sistemleri hayata geçirmek.</li>
+        </ul>
+
+        <h4>Sonuç</h4>
+        <p>ZeynVision olarak dijital dönüşümün nihai bir varış noktası değil, sürekli bir evrim ve uyum durumu olduğuna inanıyoruz. Değişimin yazılım kodundan önce insan ve operasyonel felsefeden başladığını kabul eden işletmeler, dijital hakimiyeti ele geçirmeye ve geleceğin hatlarını şekillendirmeye muktedir olan tek kuruluşlardır.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="legal-modal" role="dialog" aria-modal="true" aria-labelledby="legal-title">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card modal-lg">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <h3 id="legal-title" data-i18n="legal.title">السياسة القانونية</h3>
+    <div class="legal-tabs">
+      <button class="legal-tab active" data-tab="privacy" data-i18n="footer.privacy">سياسة الخصوصية</button>
+      <button class="legal-tab" data-tab="terms" data-i18n="footer.terms">شروط الخدمة</button>
+      <button class="legal-tab" data-tab="cookies" data-i18n="footer.cookies">ملفات الارتباط</button>
+    </div>
+    <div class="legal-content" id="legal-content">
+      <p data-i18n="legal.p1">نلتزم بحماية بياناتك الشخصية ومعالجتها وفق معايير GDPR. تُستخدم البيانات التي تشاركها معنا حصراً للتواصل وتنفيذ خدماتك.</p>
+      <p data-i18n="legal.p2">لا نبيع أو نشارك بياناتك مع أطراف ثالثة لأغراض تسويقية دون موافقة صريحة. يمكنك طلب حذف بياناتك في أي وقت.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== شريط ملفات الارتباط (GDPR) ===== -->
+<div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie consent">
+  <p data-i18n="cookie.msg">نستخدم ملفات الارتباط لتحسين تجربتك وتحليل الزيارات. باستمرارك في التصفح فأنت توافق على استخدامها.</p>
+  <div class="cookie-actions">
+    <button class="btn btn-primary btn-sm" id="cookie-accept" data-i18n="cookie.accept">قبول</button>
+    <button class="btn btn-ghost btn-sm" id="cookie-reject" data-i18n="cookie.reject">رفض</button>
+  </div>
+</div>
+
+<script src="js/main.js?v=5" defer></script>
+</body>
+</html>
