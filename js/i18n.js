@@ -1,4 +1,4 @@
-/* ZeynVision — Shared i18n dictionary (used by index.html and works.html) */
+/* ZeynVision — Shared i18n dictionary */
 window.ZV_I18N =   {
     ar: {
       nav: { home: "الرئيسية", about: "من نحن", services: "الخدمات", work: "أعمالنا", insights: "المدونة", contact: "تواصل معنا", cta: "ابدأ مشروعك" },
