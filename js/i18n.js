@@ -120,8 +120,8 @@ window.ZV_I18N =   {
         title: "تصفح مواقعنا الحية",
         sub: "موقعان حيّان منشوران على GitHub Pages — تصفّح بحرية دون أي صلاحية تعديل.",
         visit: "زيارة الموقع",
-        zeynT: "ZeynVision",
-        zeynD: "وكالتنا التقنية — حيث تقابل الرؤية الذكاء",
+        zeynpT: "ZeynPack",
+        zeynpD: "حلول التغليف والملصقات الصناعية — أكمام انكماش وملصقات ذاتية اللصق من إسطنبول",
         dialunaT: "DIALUNA",
         dialunaD: "معجون الطماطم والفلفل الفاخر — موقع ثلاثي اللغات"
       }
@@ -247,8 +247,8 @@ window.ZV_I18N =   {
         title: "Browse our live websites",
         sub: "Two live sites hosted on GitHub Pages — browse freely with no edit access.",
         visit: "Visit site",
-        zeynT: "ZeynVision",
-        zeynD: "Our tech agency — where vision meets intelligence",
+        zeynpT: "ZeynPack",
+        zeynpD: "Industrial packaging & label solutions — shrink sleeves & self-adhesive labels from Istanbul",
         dialunaT: "DIALUNA",
         dialunaD: "Premium tomato & pepper paste — trilingual website"
       }
@@ -374,8 +374,8 @@ window.ZV_I18N =   {
         title: "Canlı web sitelerimize göz atın",
         sub: "GitHub Pages'te barındırılan iki canlı site — düzenleme erişimi olmadan özgürce gezinin.",
         visit: "Siteyi ziyaret et",
-        zeynT: "ZeynVision",
-        zeynD: "Teknoloji ajansımız — vizyonun zekâyla buluştuğu yer",
+        zeynpT: "ZeynPack",
+        zeynpD: "Endüstriyel ambalaj ve etiket çözümleri — İstanbul'dan shrink sleeve ve kendinden yapışkanlı etiketler",
         dialunaT: "DIALUNA",
         dialunaD: "Premium domates ve biber salçası — üç dilli web sitesi"
       }

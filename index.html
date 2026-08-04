@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=5">
+<link rel="stylesheet" href="css/styles.css?v=6">
 </head>
 <body>
 
@@ -446,16 +446,28 @@
       <p class="sec-sub" data-i18n="sites.sub">موقعان حيّان منشوران على GitHub Pages — تصفّح بحرية دون أي صلاحية تعديل.</p>
     </div>
     <div class="sites-grid">
-      <a class="site-card reveal" href="https://exportserif-cpu.github.io/Zeyn-Vision/" target="_blank" rel="noopener noreferrer">
-        <div class="site-logo site-logo-zeyn">
+      <a class="site-card reveal" href="https://exportserif-cpu.github.io/ZeynPack/" target="_blank" rel="noopener noreferrer">
+        <div class="site-logo site-logo-zeynp">
           <svg viewBox="0 0 64 64" aria-hidden="true">
-            <polygon points="8,40.2 12,43.8 56,-8.7 52,-5.1" fill="#0066FF"/>
-            <polygon points="36,64.2 40,67.8 84,15.3 80,18.9" fill="#BFC5CE"/>
-            <circle cx="40" cy="40" r="3.5" fill="#00D4FF"/>
+            <defs>
+              <linearGradient id="zp-bg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#13315c"/>
+                <stop offset="1" stop-color="#071b33"/>
+              </linearGradient>
+              <linearGradient id="zp-roll" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#f5a623"/>
+                <stop offset="1" stop-color="#e8631b"/>
+              </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#zp-bg)"/>
+            <circle cx="24" cy="32" r="14" fill="none" stroke="url(#zp-roll)" stroke-width="6"/>
+            <circle cx="24" cy="32" r="4.5" fill="#fff"/>
+            <path d="M38 22 Q46 24 46 34 Q46 44 38 46" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+            <path d="M46 22 L56 22 L46 34 L56 34" fill="none" stroke="#fff" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
-        <h3 data-i18n="sites.zeynT">ZeynVision</h3>
-        <p data-i18n="sites.zeynD">وكالتنا التقنية — حيث تقابل الرؤية الذكاء</p>
+        <h3 data-i18n="sites.zeynpT">ZeynPack</h3>
+        <p data-i18n="sites.zeynpD">حلول التغليف والملصقات الصناعية — أكمام انكماش وملصقات ذاتية اللصق من إسطنبول</p>
         <span class="site-visit" data-i18n="sites.visit">زيارة الموقع</span>
       </a>
       <a class="site-card reveal" href="https://exportserif-cpu.github.io/dialuna-website/" target="_blank" rel="noopener noreferrer">
@@ -1392,7 +1404,7 @@
   </div>
 </div>
 
-<script src="js/i18n.js?v=3" defer></script>
+<script src="js/i18n.js?v=4" defer></script>
 <script src="js/main.js?v=6" defer></script>
 </body>
 </html>

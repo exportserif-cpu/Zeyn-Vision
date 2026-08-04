@@ -1174,10 +1174,10 @@ html[dir="ltr"] .f-col a:hover { transform: translateX(3px); }
   margin-bottom: 8px;
 }
 .site-logo svg { width: 52px; height: 52px; }
-.site-logo-zeyn {
-  background: linear-gradient(150deg, rgba(0, 102, 255, 0.18), rgba(0, 212, 255, 0.08));
-  border: 1px solid rgba(0, 212, 255, 0.3);
-  box-shadow: 0 0 30px rgba(0, 212, 255, 0.15);
+.site-logo-zeynp {
+  background: linear-gradient(150deg, rgba(19, 49, 92, 0.35), rgba(7, 27, 51, 0.5));
+  border: 1px solid rgba(245, 166, 35, 0.3);
+  box-shadow: 0 0 30px rgba(245, 166, 35, 0.1);
 }
 .site-logo-dialuna {
   background: linear-gradient(150deg, rgba(197, 30, 30, 0.16), rgba(255, 170, 60, 0.1));
