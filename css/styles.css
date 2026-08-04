@@ -1134,6 +1134,78 @@ html[dir="ltr"] .f-col a:hover { transform: translateX(3px); }
   .case-csr { grid-template-columns: 1fr; }
 }
 
+/* ---------- Our published sites ---------- */
+.sites-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.site-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 38px 28px;
+  transition: transform 0.35s var(--ease), border-color 0.35s, box-shadow 0.35s, background 0.35s;
+  position: relative;
+  overflow: hidden;
+}
+.site-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(420px circle at 50% 0%, var(--glow), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+.site-card:hover { transform: translateY(-8px); border-color: var(--border-strong); box-shadow: var(--shadow); background: var(--bg-card-hover); }
+.site-card:hover::before { opacity: 1; }
+.site-logo {
+  width: 74px; height: 74px;
+  border-radius: 20px;
+  display: grid; place-items: center;
+  margin-bottom: 8px;
+}
+.site-logo svg { width: 52px; height: 52px; }
+.site-logo-zeyn {
+  background: linear-gradient(150deg, rgba(0, 102, 255, 0.18), rgba(0, 212, 255, 0.08));
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.15);
+}
+.site-logo-dialuna {
+  background: linear-gradient(150deg, rgba(197, 30, 30, 0.16), rgba(255, 170, 60, 0.1));
+  border: 1px solid rgba(255, 170, 60, 0.35);
+  font-size: 40px;
+  font-weight: 800;
+  color: #FFC56E;
+  box-shadow: 0 0 30px rgba(255, 170, 60, 0.12);
+}
+.site-card h3 { font-size: 20px; margin-bottom: 2px; }
+.site-card p { color: var(--text-dim); font-size: 14px; margin-bottom: 14px; max-width: 300px; }
+.site-visit {
+  margin-top: auto;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--cyan);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.25s var(--ease);
+}
+.site-visit::after { content: "←"; }
+html[dir="ltr"] .site-visit::after { content: "→"; }
+.site-card:hover .site-visit { gap: 12px; }
+@media (max-width: 720px) {
+  .sites-grid { grid-template-columns: 1fr; }
+}
+
 /* ---------- Legal tabs ---------- */
 .legal-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
 .legal-tab {

@@ -113,6 +113,17 @@ window.ZV_I18N =   {
         p5s: "مساعد محادثة مؤسسي مدعوم بتعلم الآلي يربط بقاعدة المعرفة، محلاً 68% من التذاكر دون تدخل بشري.",
         p6c: "ثلاثة أقسام دولية تعمل بأنظمة معزولة، بلا رؤية موحدة أو مزامنة لحظية.",
         p6s: "بوابة سحابية موحدة بمزامنة فورية وطبقات أمان متعددة، محققة توافرية 99.99%."
+      },
+
+      sites: {
+        kicker: "مشاريعنا المنشورة",
+        title: "تصفح مواقعنا الحية",
+        sub: "موقعان حيّان منشوران على GitHub Pages — تصفّح بحرية دون أي صلاحية تعديل.",
+        visit: "زيارة الموقع",
+        zeynT: "ZeynVision",
+        zeynD: "وكالتنا التقنية — حيث تقابل الرؤية الذكاء",
+        dialunaT: "DIALUNA",
+        dialunaD: "معجون الطماطم والفلفل الفاخر — موقع ثلاثي اللغات"
       }
     },
 
@@ -229,6 +240,17 @@ window.ZV_I18N =   {
         p5s: "An enterprise chatbot powered by machine learning connected to the knowledge base, resolving 68% of tickets without human intervention.",
         p6c: "Three international divisions running on isolated systems, with no unified view or real-time synchronization.",
         p6s: "A unified cloud portal with instant sync and multi-layer security, achieving 99.99% uptime."
+      },
+
+      sites: {
+        kicker: "Our Published Projects",
+        title: "Browse our live websites",
+        sub: "Two live sites hosted on GitHub Pages — browse freely with no edit access.",
+        visit: "Visit site",
+        zeynT: "ZeynVision",
+        zeynD: "Our tech agency — where vision meets intelligence",
+        dialunaT: "DIALUNA",
+        dialunaD: "Premium tomato & pepper paste — trilingual website"
       }
     },
 
@@ -345,6 +367,17 @@ window.ZV_I18N =   {
         p5s: "Bilgi tabanına bağlı, makine öğrenmesi destekli kurumsal sohbet robotu; biletlerin %68'ini insan müdahalesi olmadan çözüyor.",
         p6c: "Üç uluslararası bölüm izole sistemler üzerinde çalışıyordu; birleşik görünüm ve gerçek zamanlı senkronizasyon yoktu.",
         p6s: "Anlık senkronizasyon ve çok katmanlı güvenlikle birleşik bulut portalı; %99,99 çalışma süresi sağlandı."
+      },
+
+      sites: {
+        kicker: "Yayınlanan Projelerimiz",
+        title: "Canlı web sitelerimize göz atın",
+        sub: "GitHub Pages'te barındırılan iki canlı site — düzenleme erişimi olmadan özgürce gezinin.",
+        visit: "Siteyi ziyaret et",
+        zeynT: "ZeynVision",
+        zeynD: "Teknoloji ajansımız — vizyonun zekâyla buluştuğu yer",
+        dialunaT: "DIALUNA",
+        dialunaD: "Premium domates ve biber salçası — üç dilli web sitesi"
       }
     }
   };
