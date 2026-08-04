@@ -251,16 +251,14 @@ html[data-theme="light"] .icon-moon { display: none; }
     linear-gradient(rgba(7, 11, 18, 0.72), rgba(7, 11, 18, 0.88)),
     radial-gradient(900px circle at 85% 12%, rgba(0, 102, 255, 0.12), transparent 55%),
     radial-gradient(800px circle at 10% 85%, rgba(0, 229, 255, 0.09), transparent 55%),
-    radial-gradient(1000px circle at 50% 50%, rgba(0, 102, 255, 0.06), transparent 60%),
-    url("img/hero-bg.webp") center / cover no-repeat;
+    radial-gradient(1000px circle at 50% 50%, rgba(0, 102, 255, 0.06), transparent 60%)
 }
 html[data-theme="light"] .hero {
   background:
     linear-gradient(rgba(244, 246, 249, 0.8), rgba(244, 246, 249, 0.92)),
     radial-gradient(900px circle at 85% 12%, rgba(0, 102, 255, 0.10), transparent 55%),
     radial-gradient(800px circle at 10% 85%, rgba(0, 229, 255, 0.08), transparent 55%),
-    radial-gradient(1000px circle at 50% 50%, rgba(0, 102, 255, 0.05), transparent 60%),
-    url("img/hero-bg.webp") center / cover no-repeat;
+    radial-gradient(1000px circle at 50% 50%, rgba(0, 102, 255, 0.05), transparent 60%)
 }
 @media (max-height: 860px) {
   .hero { min-height: auto; padding: 48px 20px 26px; }
