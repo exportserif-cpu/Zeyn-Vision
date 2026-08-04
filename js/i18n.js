@@ -118,7 +118,6 @@ window.ZV_I18N =   {
       sites: {
         kicker: "مشاريعنا المنشورة",
         title: "تصفح مواقعنا الحية",
-        sub: "موقعان حيّان منشوران على GitHub Pages — تصفّح بحرية دون أي صلاحية تعديل.",
         visit: "زيارة الموقع",
         zeynpT: "ZeynPack",
         zeynpD: "حلول التغليف والملصقات الصناعية — أكمام انكماش وملصقات ذاتية اللصق من إسطنبول",
@@ -245,7 +244,6 @@ window.ZV_I18N =   {
       sites: {
         kicker: "Our Published Projects",
         title: "Browse our live websites",
-        sub: "Two live sites hosted on GitHub Pages — browse freely with no edit access.",
         visit: "Visit site",
         zeynpT: "ZeynPack",
         zeynpD: "Industrial packaging & label solutions — shrink sleeves & self-adhesive labels from Istanbul",
@@ -372,7 +370,6 @@ window.ZV_I18N =   {
       sites: {
         kicker: "Yayınlanan Projelerimiz",
         title: "Canlı web sitelerimize göz atın",
-        sub: "GitHub Pages'te barındırılan iki canlı site — düzenleme erişimi olmadan özgürce gezinin.",
         visit: "Siteyi ziyaret et",
         zeynpT: "ZeynPack",
         zeynpD: "Endüstriyel ambalaj ve etiket çözümleri — İstanbul'dan shrink sleeve ve kendinden yapışkanlı etiketler",
