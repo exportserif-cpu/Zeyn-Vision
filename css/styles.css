@@ -1304,3 +1304,16 @@ html[dir="ltr"] .site-visit::after { content: "→"; }
   }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- WhatsApp link in contact info ---------- */
+.wa-link {
+  color: var(--cyan);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(0, 212, 255, 0.4);
+  transition: color 0.25s, border-color 0.25s;
+}
+.wa-link:hover {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+}

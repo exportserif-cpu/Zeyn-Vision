@@ -80,7 +80,7 @@ window.ZV_I18N =   {
         f: { name: "الاسم الكامل", namePh: "مثال: أحمد الكيلاني", email: "البريد الإلكتروني", emailPh: "you@company.com", svc: "الخدمة المطلوبة", budget: "الميزانية التقريبية", msg: "تفاصيل المشروع", msgPh: "صف هدفك، نطاق العمل، والجدول الزمني المتوقع...", submit: "أرسل الطلب" },
         b1: "< $10K", b2: "$10K – $50K", b3: "$50K – $150K", b4: "> $150K",
         ok: "✓ تم استلام طلبك — سيتواصل معك فريقنا خلال 24 ساعة.",
-        hq: "المقر الرئيسي", hq1: "Levent، إسطنبول، تركيا", em: "البريد", ph: "الهاتف", web: "الموقع", hrs: "ساعات العمل", hrs1: "الاثنين – الجمعة، 09:00 – 18:00",
+        hq: "المقر الرئيسي", hq1: "Levent، إسطنبول، تركيا", em: "البريد", ph: "الهاتف / واتساب", web: "الموقع", hrs: "ساعات العمل", hrs1: "الاثنين – الجمعة، 09:00 – 18:00",
         consult: "احجز استشارة فورية"
       },
       modal: {
@@ -206,7 +206,7 @@ window.ZV_I18N =   {
         f: { name: "Full name", namePh: "e.g. John Carter", email: "Email", emailPh: "you@company.com", svc: "Service needed", budget: "Approx. budget", msg: "Project details", msgPh: "Describe your goal, scope and expected timeline...", submit: "Send Request" },
         b1: "< $10K", b2: "$10K – $50K", b3: "$50K – $150K", b4: "> $150K",
         ok: "✓ Request received — our team will reach out within 24 hours.",
-        hq: "Headquarters", hq1: "Levent, Istanbul, Turkey", em: "Email", ph: "Phone", web: "Website", hrs: "Working hours", hrs1: "Mon – Fri, 09:00 – 18:00",
+        hq: "Headquarters", hq1: "Levent, Istanbul, Turkey", em: "Email", ph: "Phone / WhatsApp", web: "Website", hrs: "Working hours", hrs1: "Mon – Fri, 09:00 – 18:00",
         consult: "Book an Instant Consultation"
       },
       modal: {
@@ -332,7 +332,7 @@ window.ZV_I18N =   {
         f: { name: "Ad Soyad", namePh: "örn. Ali Yılmaz", email: "E-posta", emailPh: "you@company.com", svc: "İhtiyaç duyulan hizmet", budget: "Yaklaşık bütçe", msg: "Proje detayları", msgPh: "Hedefinizi, kapsamı ve beklenen zaman çizelgesini açıklayın...", submit: "Talebi Gönder" },
         b1: "< $10K", b2: "$10K – $50K", b3: "$50K – $150K", b4: "> $150K",
         ok: "✓ Talebiniz alındı — ekibimiz 24 saat içinde size ulaşacak.",
-        hq: "Merkez", hq1: "Levent, İstanbul, Türkiye", em: "E-posta", ph: "Telefon", web: "Web sitesi", hrs: "Çalışma saatleri", hrs1: "Pzt – Cum, 09:00 – 18:00",
+        hq: "Merkez", hq1: "Levent, İstanbul, Türkiye", em: "E-posta", ph: "Telefon / WhatsApp", web: "Web sitesi", hrs: "Çalışma saatleri", hrs1: "Pzt – Cum, 09:00 – 18:00",
         consult: "Anında Danışmanlık Ayırtın"
       },
       modal: {
